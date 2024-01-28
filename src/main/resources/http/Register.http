@@ -1,0 +1,14 @@
+POST http://localhost:8080/register/create
+Content-Type: application/json
+
+{
+  "name": "Ozod",
+  "surname": "Abjalilov",
+  "email": "ozod@mail.ru",
+  "password": "1234",
+  "status": "ACTIVE",
+  "role": "USER",
+  "phone": "1111",
+  "visible": false
+
+}

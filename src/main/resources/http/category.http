@@ -1,0 +1,28 @@
+POST http://localhost:8080/category/created
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MDY0MzE4NDQsImlkIjoxLCJyb2xlIjoiQURNSU4iLCJleHAiOjE3MDY1MTgyNDQsImlzcyI6Ikt1blV6VGVzdCJ9.gukxe6SfoGsxjx6iZO2CG_agsjntiwzoifsPL2P2LiiR4ESGnNA7asB4_KgUIIdm5gqjPKk1jPadfeF-uiFMcw
+
+
+
+{
+  "nameUz": "5-uz",
+  "nameEng": "5-eng",
+  "nameRu": "5-ru",
+  "orderNumber": 5
+}
+
+###
+PUT http://localhost:8080/category/5
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MDY0MzE4NDQsImlkIjoxLCJyb2xlIjoiQURNSU4iLCJleHAiOjE3MDY1MTgyNDQsImlzcyI6Ikt1blV6VGVzdCJ9.gukxe6SfoGsxjx6iZO2CG_agsjntiwzoifsPL2P2LiiR4ESGnNA7asB4_KgUIIdm5gqjPKk1jPadfeF-uiFMcw
+
+
+{
+"nameUz": "5A-uz",
+"nameEng": "5A-ru",
+"nameRu": "5A-eng",
+"orderNumber": 0
+}
+###
+GET http://localhost:8080/category/getAllOrderNumber?order_number=1
+Authorization: eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MDY0MzE4NDQsImlkIjoxLCJyb2xlIjoiQURNSU4iLCJleHAiOjE3MDY1MTgyNDQsImlzcyI6Ikt1blV6VGVzdCJ9.gukxe6SfoGsxjx6iZO2CG_agsjntiwzoifsPL2P2LiiR4ESGnNA7asB4_KgUIIdm5gqjPKk1jPadfeF-uiFMcw
