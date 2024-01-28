@@ -31,20 +31,23 @@ import java.util.List;
        @PutMapping("/adm/{id}")
        public ResponseEntity<String> edit(@RequestBody RegionDTO regionDTO,
                                           @PathVariable Integer id,
-                                          @RequestHeader(value = "Authorization") String jwt) {
-           JwtDTO jwtDTO = JWTUtil.decode(jwt);
-           if (!jwtDTO.getRole().equals(ProfileRole.ADMIN)) {
-               return ResponseEntity.status(HttpStatus.FORBIDDEN).build();
-           }
+                                          HttpServletRequest request) {
+
+            JwtDTO jwtDTO=HttpRequestUtil.getJWTDTO(request,ProfileRole.ADMIN);
+//           JwtDTO jwtDTO = JWTUtil.decode(jwt);
+//           if (!jwtDTO.getRole().equals(ProfileRole.ADMIN)) {
+//               return ResponseEntity.status(HttpStatus.FORBIDDEN).build();
+//           }
            return ResponseEntity.ok(regionService.edit(id,regionDTO));
        }
 
        @DeleteMapping("/adm/{deletbyId}")
        public ResponseEntity<String>deleted(@PathVariable Integer deletbyId, HttpServletRequest request){
-          ProfileRole role=(ProfileRole) request.getAttribute("role");
-          if (!role.equals(ProfileRole.ADMIN)){
-              return ResponseEntity.status(HttpStatus.FORBIDDEN).build();
-          }
+           JwtDTO jwtDTO=HttpRequestUtil.getJWTDTO(request,ProfileRole.ADMIN);
+//          ProfileRole role=(ProfileRole) request.getAttribute("role");
+//          if (!role.equals(ProfileRole.ADMIN)){
+//              return ResponseEntity.status(HttpStatus.FORBIDDEN).build();
+//          }
            return ResponseEntity.ok(regionService.deletedById(deletbyId));
        }
        @GetMapping("/adm/all")

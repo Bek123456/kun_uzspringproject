@@ -39,8 +39,7 @@ public class RegionService {
         regionEntity.setNameEn(regionDTO.getNameEn());
         regionEntity.setNameRu(regionDTO.getNameRu());
         regionEntity.setNameUz(regionDTO.getNameUz());
-        regionEntity.setOrderNumber(regionDTO.getOrderNumber());
-
+        regionEntity.setUpdatedDate(LocalDateTime.now());
         regionRepository.save(regionEntity);
         return "edit region";
     }
