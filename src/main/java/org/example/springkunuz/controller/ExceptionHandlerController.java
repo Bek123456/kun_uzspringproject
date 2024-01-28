@@ -18,6 +18,7 @@ public class ExceptionHandlerController {
 
     @ExceptionHandler(ForbiddenException.class)
     private ResponseEntity<?>handle(ForbiddenException e){
+        e.printStackTrace();
         return ResponseEntity.status(HttpStatus.FORBIDDEN).build();
     }
 
@@ -28,7 +29,6 @@ public class ExceptionHandlerController {
 
     @ExceptionHandler(RuntimeException.class)
     public ResponseEntity<?>handle(RuntimeException e){
-        e.printStackTrace();
         return ResponseEntity.internalServerError().body(e.getMessage());
     }
 }

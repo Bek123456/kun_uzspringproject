@@ -12,3 +12,12 @@ Content-Type: application/json
   "visible": false
 
 }
+
+###
+POST http://localhost:8080/auth/login
+Content-Type: application/json
+
+{
+  "email": "ozod@mail.ru",
+  "password": "1234"
+}

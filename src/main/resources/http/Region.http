@@ -1,0 +1,11 @@
+POST http://localhost:8080/region/adm
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MDY0NTA1MTEsImlkIjoxLCJyb2xlIjoiQURNSU4iLCJleHAiOjE3MDY1MzY5MTEsImlzcyI6Ikt1blV6VGVzdCJ9.7H3a5hsLvYtexUg3SM95PFzG20OlGWMZm4a-s7oEL1PWx1cvcMw4ZR__1KWbl7hbcGcV8xhhHwaPU3t2tZS-gQ
+
+{
+  "orderNumber": 21,
+  "nameUz": "1-uz11",
+  "nameRu": "1-ru11",
+  "nameEn": "1-eng11"
+
+}

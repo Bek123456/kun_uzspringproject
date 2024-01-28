@@ -38,6 +38,7 @@ import java.util.List;
 //           if (!jwtDTO.getRole().equals(ProfileRole.ADMIN)) {
 //               return ResponseEntity.status(HttpStatus.FORBIDDEN).build();
 //           }
+
            return ResponseEntity.ok(regionService.edit(id,regionDTO));
        }
 
@@ -51,11 +52,12 @@ import java.util.List;
            return ResponseEntity.ok(regionService.deletedById(deletbyId));
        }
        @GetMapping("/adm/all")
-       public ResponseEntity<List<RegionDTO>>getAll( @RequestHeader(value = "Authorization") String jwt){
-           JwtDTO jwtDTO = JWTUtil.decode(jwt);
-           if (!jwtDTO.getRole().equals(ProfileRole.ADMIN)) {
-               return ResponseEntity.status(HttpStatus.FORBIDDEN).build();
-           }
+       public ResponseEntity<List<RegionDTO>>getAll(HttpServletRequest request){
+//           JwtDTO jwtDTO = JWTUtil.decode(jwt);
+//           if (!jwtDTO.getRole().equals(ProfileRole.ADMIN)) {
+//               return ResponseEntity.status(HttpStatus.FORBIDDEN).build();
+//           }
+           JwtDTO jwtDTO=HttpRequestUtil.getJWTDTO(request,ProfileRole.ADMIN);
            return ResponseEntity.ok(regionService.getAll());
        }
        @GetMapping("/getLang")
