@@ -26,3 +26,69 @@ Authorization: eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MDY0MzE4NDQsImlkIjoxLCJyb2xlIjoi
 ###
 GET http://localhost:8080/category/getAllOrderNumber?order_number=1
 Authorization: eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MDY0MzE4NDQsImlkIjoxLCJyb2xlIjoiQURNSU4iLCJleHAiOjE3MDY1MTgyNDQsImlzcyI6Ikt1blV6VGVzdCJ9.gukxe6SfoGsxjx6iZO2CG_agsjntiwzoifsPL2P2LiiR4ESGnNA7asB4_KgUIIdm5gqjPKk1jPadfeF-uiFMcw
+
+####
+POST http://localhost:8080/category/adm/created
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MDY0MzE4NDQsImlkIjoxLCJyb2xlIjoiQURNSU4iLCJleHAiOjE3MDY1MTgyNDQsImlzcyI6Ikt1blV6VGVzdCJ9.gukxe6SfoGsxjx6iZO2CG_agsjntiwzoifsPL2P2LiiR4ESGnNA7asB4_KgUIIdm5gqjPKk1jPadfeF-uiFMcw
+
+
+{
+  "nameUz": "uuuu3",
+  "nameEng": "eeee3",
+  "nameRu": "rrrrr3",
+  "orderNumber": 4
+}
+####
+PUT http://localhost:8080/category/adm/1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MDY0MzE4NDQsImlkIjoxLCJyb2xlIjoiQURNSU4iLCJleHAiOjE3MDY1MTgyNDQsImlzcyI6Ikt1blV6VGVzdCJ9.gukxe6SfoGsxjx6iZO2CG_agsjntiwzoifsPL2P2LiiR4ESGnNA7asB4_KgUIIdm5gqjPKk1jPadfeF-uiFMcw
+
+
+{
+  "nameUz": "UUUU",
+  "nameEng": "EEEE",
+  "nameRu": "RRRRR",
+  "orderNumber": 2
+}
+
+###
+POST http://localhost:8080/category/adm/created
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MDY1MjIyMzYsImlkIjoxLCJyb2xlIjoiQURNSU4iLCJleHAiOjE3MDY2MDg2MzYsImlzcyI6Ikt1blV6VGVzdCJ9.Wo9rOpy1DFgn73IeaiVAYCQgUDPWE6ZfH_Dl1KYiXqJxLSe5tPbso1ZOl49GWREkHpKRajl8obQ10hCin-viBw
+
+{
+  "nameUz": "cuuuu",
+  "nameEng": "ceeeee",
+  "nameRu": "crrrrrr",
+  "orderNumber": 1
+}
+
+###
+PUT http://localhost:8080/category/adm/1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MDY1MjIyMzYsImlkIjoxLCJyb2xlIjoiQURNSU4iLCJleHAiOjE3MDY2MDg2MzYsImlzcyI6Ikt1blV6VGVzdCJ9.Wo9rOpy1DFgn73IeaiVAYCQgUDPWE6ZfH_Dl1KYiXqJxLSe5tPbso1ZOl49GWREkHpKRajl8obQ10hCin-viBw
+
+
+{
+  "nameUz": "UUUU",
+  "nameEng": "EEEE",
+  "nameRu": "RRRRR",
+  "orderNumber": 2
+}
+####
+DELETE http://localhost:8080/category/adm/2
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MDY1MjIyMzYsImlkIjoxLCJyb2xlIjoiQURNSU4iLCJleHAiOjE3MDY2MDg2MzYsImlzcyI6Ikt1blV6VGVzdCJ9.Wo9rOpy1DFgn73IeaiVAYCQgUDPWE6ZfH_Dl1KYiXqJxLSe5tPbso1ZOl49GWREkHpKRajl8obQ10hCin-viBw
+
+
+
+
+
+
+
+
+
+
+
+
+

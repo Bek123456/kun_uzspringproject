@@ -14,10 +14,13 @@ Content-Type: application/json
 }
 
 ###
-POST http://localhost:8080/auth/login
+
+POST http://localhost:8080/auth/registration
 Content-Type: application/json
 
 {
-  "email": "ozod@mail.ru",
+  "name": "Ozod",
+  "surname": "abjalilov",
+  "email": "abdujalilovozod95@gmail.com",
   "password": "1234"
 }

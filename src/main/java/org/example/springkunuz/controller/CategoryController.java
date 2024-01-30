@@ -1,10 +1,12 @@
 package org.example.springkunuz.controller;
 
+import jakarta.servlet.http.HttpServletRequest;
 import org.example.springkunuz.dto.CategoryDTO;
 import org.example.springkunuz.dto.JwtDTO;
 import org.example.springkunuz.enums.AppLanguage;
 import org.example.springkunuz.enums.ProfileRole;
 import org.example.springkunuz.service.CategoryService;
+import org.example.springkunuz.util.HttpRequestUtil;
 import org.example.springkunuz.util.JWTUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -20,41 +22,28 @@ public class CategoryController {
       @Autowired
       private CategoryService categoryService;
 
-    @PostMapping("/created")
-    public ResponseEntity<String>created(@RequestHeader(value = "Authorization")String jwt,
+    @PostMapping("/adm/created")
+    public ResponseEntity<String>created(HttpServletRequest request,
                                          @RequestBody CategoryDTO categoryDTO){
-                JwtDTO jwtDTO= JWTUtil.decode(jwt);
-                 if (!jwtDTO.getRole().equals(ProfileRole.ADMIN)){
-                    return ResponseEntity.status(HttpStatus.FORBIDDEN).build();
-                  }
-                 return ResponseEntity.ok(categoryService.created(categoryDTO));
+                JwtDTO jwtDTO= HttpRequestUtil.getJWTDTO(request,ProfileRole.ADMIN);
+                return ResponseEntity.ok(categoryService.created(categoryDTO));
     }
-    @PutMapping("/{byId}")
+    @PutMapping("/adm/{byId}")
     public ResponseEntity<String>editById(@PathVariable Integer byId,@RequestBody CategoryDTO categoryDTO,
-                                          @RequestHeader(value = "Authorization")String jwt){
-
-        JwtDTO jwtDTO= JWTUtil.decode(jwt);
-        if (!jwtDTO.getRole().equals(ProfileRole.ADMIN)){
-            return ResponseEntity.status(HttpStatus.FORBIDDEN).build();
-        }
+                                        HttpServletRequest request){
+       JwtDTO jwtDTO=HttpRequestUtil.getJWTDTO(request,ProfileRole.ADMIN);
         return ResponseEntity.ok(categoryService.editById(byId,categoryDTO));
     }
-    @DeleteMapping("/{deletedById}")
+    @DeleteMapping("/adm/{deletedById}")
     public ResponseEntity<String>deleted(@PathVariable Integer deletedById,
-                                         @RequestHeader(value = "Authorization")String jwt){
-        JwtDTO jwtDTO= JWTUtil.decode(jwt);
-        if (!jwtDTO.getRole().equals(ProfileRole.ADMIN)){
-            return ResponseEntity.status(HttpStatus.FORBIDDEN).build();
-        }
+                                       HttpServletRequest request){
+        JwtDTO jwtDTO=HttpRequestUtil.getJWTDTO(request,ProfileRole.ADMIN);
         return ResponseEntity.ok(categoryService.deletedById(deletedById));
     }
-    @GetMapping("/getAllOrderNumber")
+    @GetMapping("/adm/getAllOrderNumber")
     public ResponseEntity<List<CategoryDTO>>getAllOrderNumber(@RequestParam(value = "order_number")Integer order_number,
-                                                              @RequestHeader(value = "Authorization")String jwt){
-        JwtDTO jwtDTO= JWTUtil.decode(jwt);
-        if (!jwtDTO.getRole().equals(ProfileRole.ADMIN)){
-            return ResponseEntity.status(HttpStatus.FORBIDDEN).build();
-        }
+                                                              HttpServletRequest request){
+        JwtDTO jwtDTO=HttpRequestUtil.getJWTDTO(request,ProfileRole.ADMIN);
         List<CategoryDTO> allOrderNumber = categoryService.getAllOrderNumber(order_number);
         return ResponseEntity.ok(allOrderNumber);
     }

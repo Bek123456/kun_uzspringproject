@@ -8,6 +8,7 @@ import org.example.springkunuz.repository.CategoryRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
@@ -36,6 +37,7 @@ public class CategoryService {
          categoryEntity1.setNameRu(categoryDTO.getNameRu());
          categoryEntity1.setNameUz(categoryDTO.getNameUz());
          categoryEntity1.setOrderNumber(categoryDTO.getOrderNumber());
+         categoryEntity1.setUpdatedDate(LocalDateTime.now());
          categoryRepository.save(categoryEntity1);
          return "edit category";
     }

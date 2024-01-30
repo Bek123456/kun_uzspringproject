@@ -9,8 +9,8 @@ import java.util.Date;
 
 public class JWTUtil {
     private static final int tokenLiveTime = 1000 * 3600 * 24; // 1-day
-    private static final String secretKey = "mazgi123mazgidasdasdkja1dkjas7dksdakjshdkahsdkjahsdkahs7kjhaskjdh2skjdhadasdasg7fgdfgdfd";
-
+    private static final String secretKey = "mazgi123mazgidasdasdkja1dkjas7dksdakjshdkahsdkjahsdkahs7kjhaskjdh2skjdhadasdasg7fgdfgdfdhfhfhghgjg";
+    private static final int emailTokenLiveTime = 3600_000;
 
     public static JwtDTO decode(String token) {
         SignatureAlgorithm sa = SignatureAlgorithm.HS512;
@@ -24,9 +24,11 @@ public class JWTUtil {
 
         Integer id = (Integer) claims.get("id");
         String role = (String) claims.get("role");
-        ProfileRole profileRole = ProfileRole.valueOf(role);
-
-        return new JwtDTO(id, profileRole);
+        if (role != null) {
+            ProfileRole profileRole = ProfileRole.valueOf(role);
+            return new JwtDTO(id, profileRole);
+        }
+        return new JwtDTO(id);
     }
 
 
@@ -43,6 +45,18 @@ public class JWTUtil {
         jwtBuilder.claim("role", role);
 
         jwtBuilder.expiration(new Date(System.currentTimeMillis() + (tokenLiveTime)));
+        jwtBuilder.issuer("KunUzTest");
+        return jwtBuilder.compact();
+    }
+
+    public static String encodeForEmail(Integer profileId) {
+        JwtBuilder jwtBuilder = Jwts.builder();
+        jwtBuilder.issuedAt(new Date());
+        SignatureAlgorithm sa = SignatureAlgorithm.HS512;
+        SecretKeySpec secretKeySpec = new SecretKeySpec(secretKey.getBytes(), sa.getJcaName());
+        jwtBuilder.signWith(secretKeySpec);
+        jwtBuilder.claim("id", profileId);
+        jwtBuilder.expiration(new Date(System.currentTimeMillis() + (emailTokenLiveTime)));
         jwtBuilder.issuer("KunUzTest");
         return jwtBuilder.compact();
     }
