@@ -1,6 +1,7 @@
 package org.example.springkunuz.controller;
 
 import jakarta.persistence.Entity;
+import jakarta.validation.Valid;
 import org.example.springkunuz.dto.AuthDTO;
 import org.example.springkunuz.dto.ProfileDTO;
 import org.example.springkunuz.dto.RegistrationDTO;
@@ -11,18 +12,18 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/auth")
+@RequestMapping("/api/auth")
 public class AuthController {
     @Autowired
     private AuthService authService;
 
     @PostMapping("/login")
-    public ResponseEntity<ProfileDTO>login(@RequestBody  AuthDTO authDTO){
+    public ResponseEntity<ProfileDTO>login(@Valid @RequestBody  AuthDTO authDTO){
         ProfileDTO auth = authService.auth(authDTO);
         return ResponseEntity.ok(auth);
     }
     @PostMapping("/registration")
-    public ResponseEntity<Boolean> registration(@RequestBody RegistrationDTO dto) {
+    public ResponseEntity<String> registration(@RequestBody RegistrationDTO dto) {
         return ResponseEntity.ok(authService.registration(dto));
     }
 
@@ -30,5 +31,11 @@ public class AuthController {
     public ResponseEntity<String> emailVerification(@PathVariable("jwt") String jwt) {
         return ResponseEntity.ok(authService.emailVerification(jwt));
     }
+    @GetMapping("/verification/sms/jwt")
+    public ResponseEntity<String> smsVerification(@PathVariable("jwt") String jwt) {
+        String s = authService.smsVerification(jwt);
+        return ResponseEntity.ok(s);
+    }
+
 
 }

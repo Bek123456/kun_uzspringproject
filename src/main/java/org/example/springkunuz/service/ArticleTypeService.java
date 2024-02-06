@@ -25,7 +25,7 @@ public class ArticleTypeService {
         articleTypeEntity.setNameEng(articleTypeDTO.getNameEng());
         articleTypeEntity.setNameUz(articleTypeDTO.getNameUz());
         articleTypeEntity.setNameRus(articleTypeDTO.getNameRus());
-        articleTypeEntity.setOrderNumber(articleTypeDTO.getOrderNumber());
+        articleTypeEntity.setOrder_number(articleTypeDTO.getOrderNumber());
         ArticleTypeEntity save = articleTypeRepository.save(articleTypeEntity);
         return "created article type";
     }
@@ -38,7 +38,7 @@ public class ArticleTypeService {
             throw new AppBadException("Not found articleType");
         }
         ArticleTypeEntity articleTypeEntity = optionalArticleType.get();
-        articleTypeEntity.setOrderNumber(articleTypeDTO.getOrderNumber());
+        articleTypeEntity.setOrder_number(articleTypeDTO.getOrderNumber());
         articleTypeEntity.setNameEng(articleTypeDTO.getNameEng());
         articleTypeEntity.setNameUz(articleTypeDTO.getNameUz());
         articleTypeEntity.setNameRus(articleTypeDTO.getNameRus());

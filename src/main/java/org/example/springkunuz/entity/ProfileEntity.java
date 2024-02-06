@@ -15,11 +15,11 @@ public class ProfileEntity extends BaseEntity {
     private String name;
     @Column(nullable = false)
     private String surname;
-    @Column(unique = true, nullable = false)
+    @Column(name = "email",unique = true, nullable = false)
     private String email;
     @Column(nullable = false)
     private String password;
-    @Column(name = "phone")
+    @Column(name = "phone",unique = true)
     private String phone;
     @Enumerated(EnumType.STRING)
     @Column(name = "status")

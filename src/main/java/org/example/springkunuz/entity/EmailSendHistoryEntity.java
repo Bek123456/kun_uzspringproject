@@ -14,7 +14,7 @@ public class EmailSendHistoryEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-    @Column(name = "message")
+    @Column(name = "message", columnDefinition = "TEXT")
     private String message;
     @Column(name = "email")
     private String email;

@@ -26,6 +26,7 @@ public class SecuredFilterConfig {
         bean.addUrlPatterns("/profile/adm");
         bean.addUrlPatterns("/profile/adm/*");
         bean.addUrlPatterns("/profile/adm/**");
+        bean.addUrlPatterns("/api/auth/verification/email/jwt");
         return bean;
     }
 

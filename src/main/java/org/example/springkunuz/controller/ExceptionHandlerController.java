@@ -29,6 +29,7 @@ public class ExceptionHandlerController {
 
     @ExceptionHandler(RuntimeException.class)
     public ResponseEntity<?>handle(RuntimeException e){
+        e.printStackTrace();
         return ResponseEntity.internalServerError().body(e.getMessage());
     }
 }

@@ -1,0 +1,14 @@
+### Create
+POST http://localhost:8080/attach/upload
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+
+--WebAppBoundary
+Content-Disposition: form-data; name="file"; filename="zari.jpg"
+
+< D:\test\zari\zari.jpg
+
+####
+GET http://localhost:8080/attach/open/sv.MP4
+####
+GET http://localhost:8080/attach/open_general/sv.mp3
+
