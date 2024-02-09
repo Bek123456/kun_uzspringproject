@@ -1,12 +1,12 @@
 POST http://localhost:8080/articletype/adm
 Content-Type: application/json
-Authorization:Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MDY0NTA1MTEsImlkIjoxLCJyb2xlIjoiQURNSU4iLCJleHAiOjE3MDY1MzY5MTEsImlzcyI6Ikt1blV6VGVzdCJ9.7H3a5hsLvYtexUg3SM95PFzG20OlGWMZm4a-s7oEL1PWx1cvcMw4ZR__1KWbl7hbcGcV8xhhHwaPU3t2tZS-gQ
+Authorization:Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MDczODI5OTgsImlkIjoxLCJyb2xlIjoiQURNSU4iLCJleHAiOjE3MDc0NjkzOTgsImlzcyI6Ikt1blV6VGVzdCJ9.hAghkpx-CmgwbYHAcNKK6NiaGFwx-RpBfaxheI_3kitUBm5Sej0JfUP8zrMoapl004fzzcX3O33eqfBKx6z7vg
 
 {
-    "nameUz": "uuuu121",
-  "nameRus": "rrrrr121",
-  "nameEng": "eeeee121",
-  "orderNumber": "12344511"
+    "nameUz": "uuuu6",
+  "nameRus": "rrrrr6",
+  "nameEng": "eeeee6",
+  "orderNumber": "6"
 }
 
 ####

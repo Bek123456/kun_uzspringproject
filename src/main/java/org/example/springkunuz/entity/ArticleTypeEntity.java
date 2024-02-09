@@ -11,5 +11,4 @@ public class ArticleTypeEntity extends BaseEntity{
     private String nameUz;
     private String nameEng;
     private String nameRus;
-
 }

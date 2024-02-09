@@ -41,7 +41,7 @@ public class AuthService {
 
           ProfileEntity entity = optional.get();
 
-          if(entity.getStatus().equals(ProfileStatus.ACTIVE)){
+          if(!entity.getStatus().equals(ProfileStatus.ACTIVE)){
                throw new AppBadException("Profile not active");
           }
           ProfileDTO dto = new ProfileDTO();

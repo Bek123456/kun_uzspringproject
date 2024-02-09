@@ -1,14 +1,13 @@
-POST http://localhost:8080/category/created
+POST http://localhost:8080/category/adm/created
 Content-Type: application/json
-Authorization: eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MDY0MzE4NDQsImlkIjoxLCJyb2xlIjoiQURNSU4iLCJleHAiOjE3MDY1MTgyNDQsImlzcyI6Ikt1blV6VGVzdCJ9.gukxe6SfoGsxjx6iZO2CG_agsjntiwzoifsPL2P2LiiR4ESGnNA7asB4_KgUIIdm5gqjPKk1jPadfeF-uiFMcw
-
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MDczODI5OTgsImlkIjoxLCJyb2xlIjoiQURNSU4iLCJleHAiOjE3MDc0NjkzOTgsImlzcyI6Ikt1blV6VGVzdCJ9.hAghkpx-CmgwbYHAcNKK6NiaGFwx-RpBfaxheI_3kitUBm5Sej0JfUP8zrMoapl004fzzcX3O33eqfBKx6z7vg
 
 
 {
-  "nameUz": "5-uz",
-  "nameEng": "5-eng",
-  "nameRu": "5-ru",
-  "orderNumber": 5
+  "nameUz": "1-uz",
+  "nameEng": "1-eng",
+  "nameRu": "1-ru",
+  "orderNumber": 1
 }
 
 ###

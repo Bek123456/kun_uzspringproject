@@ -91,7 +91,7 @@
 
 6. Article
     1. CREATE (Moderator) status(NotPublished)
-        (title,description,content,image_id, region_id,category_id, articleType(array))
+        (title,description,content,image_id,region_id,category_id, articleType(array))
     2. Update (Moderator (status to not publish)) (remove old image)
         (title,description,content,shared_count,image_id, region_id,category_id)
     3. Delete Article (MODERATOR)

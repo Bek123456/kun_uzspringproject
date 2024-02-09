@@ -1,5 +1,5 @@
 package org.example.springkunuz.enums;
 
 public enum ProfileRole {
-    USER,ADMIN
+    USER,ADMIN,MODERATOR
 }

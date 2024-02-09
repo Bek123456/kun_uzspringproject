@@ -20,11 +20,19 @@ public class AttachController {
 //        String fileName = attachService.saveToSystem(file);
 //        return ResponseEntity.ok().body(fileName);
 //    }
-    @PostMapping("/upload")
 
-     public ResponseEntity<AttachDTO> upload(@RequestParam("file") MultipartFile file) {
-       AttachDTO dto = attachService.save(file);
-       return ResponseEntity.ok().body(dto);
+
+//    @PostMapping("/upload")
+//
+//     public ResponseEntity<AttachDTO> upload(@RequestParam("file") MultipartFile file) {
+//       AttachDTO dto = attachService.save(file);
+//       return ResponseEntity.ok().body(dto);
+//    }
+
+    @PostMapping("/upload")
+    public ResponseEntity<AttachDTO>upload(@RequestParam("file")MultipartFile file){
+        AttachDTO save = attachService.save(file);
+        return ResponseEntity.ok(save);
     }
 
     @GetMapping(value = "/open/{fileName}", produces = MediaType.IMAGE_PNG_VALUE)

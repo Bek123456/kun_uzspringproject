@@ -7,8 +7,11 @@ Content-Disposition: form-data; name="file"; filename="zari.jpg"
 
 < D:\test\zari\zari.jpg
 
+
 ####
-GET http://localhost:8080/attach/open/sv.MP4
+GET http://localhost:8080/attach/open/93117bf9-41ee-42cd-a672-d76e3c28f15b.jpg
+
+
 ####
-GET http://localhost:8080/attach/open_general/sv.mp3
+GET http://localhost:8080/attach/open_general/712da93f-54a2-4833-b899-2f7450878cbf.jpg
 

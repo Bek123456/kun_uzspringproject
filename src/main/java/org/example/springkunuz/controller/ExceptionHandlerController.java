@@ -1,13 +1,14 @@
 package org.example.springkunuz.controller;
 
 import io.jsonwebtoken.JwtException;
+import lombok.extern.slf4j.Slf4j;
 import org.example.springkunuz.exp.AppBadException;
 import org.example.springkunuz.exp.ForbiddenException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
-
+@Slf4j
 @ControllerAdvice
 public class ExceptionHandlerController {
 
@@ -30,6 +31,7 @@ public class ExceptionHandlerController {
     @ExceptionHandler(RuntimeException.class)
     public ResponseEntity<?>handle(RuntimeException e){
         e.printStackTrace();
+        log.error(e.toString());
         return ResponseEntity.internalServerError().body(e.getMessage());
     }
 }

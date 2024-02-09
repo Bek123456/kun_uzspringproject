@@ -42,6 +42,7 @@ public class AttachService {
             if (!folder.exists()) { // uploads/2022/04/23
                 folder.mkdirs();
             }
+
             String key = UUID.randomUUID().toString(); // dasdasd-dasdasda-asdasda-asdasd
             String extension = getExtension(file.getOriginalFilename()); // mp3/jpg/npg/mp4
 
@@ -52,6 +53,7 @@ public class AttachService {
             //                         uploads/ + Path + id + extension
 
             Files.write(path, bytes);
+
             AttachEntity entity = new AttachEntity();
             entity.setSize(file.getSize());
             entity.setExtension(extension);
@@ -59,15 +61,15 @@ public class AttachService {
             entity.setCreatedData(LocalDateTime.now());
             entity.setId(key);
             entity.setPath(pathFolder);
-
             attachRepository.save(entity);
-
             return toDTO(entity);
         } catch (IOException e) {
             e.printStackTrace();
         }
         return null;
     }
+
+
 
 
     public String saveToSystem(MultipartFile file) { // mazgi.png
@@ -85,6 +87,7 @@ public class AttachService {
         }
         return null;
     }
+
 
 //    public byte[] loadImage(String fileName) { // zari.jpg
 //        BufferedImage originalImage;
@@ -122,6 +125,7 @@ public class AttachService {
     }
 
     public byte[] open_general(String fileName) {
+
         byte[] data;
         try {
             Path file = Paths.get("attaches/" + fileName);
@@ -181,6 +185,7 @@ public class AttachService {
 //            throw new RuntimeException("Error: " + e.getMessage());
 //        }
 //    }
+
 
 
 

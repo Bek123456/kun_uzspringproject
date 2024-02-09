@@ -16,17 +16,21 @@ public class SecuredFilterConfig {
         bean.setFilter(tokenFilter);
         bean.addUrlPatterns("/region/adm");
         bean.addUrlPatterns("/region/adm/*");
-        bean.addUrlPatterns("/region/adm/**");
+
         bean.addUrlPatterns("/articletype/*");
         bean.addUrlPatterns("/articletype/adm/*");
-        bean.addUrlPatterns("/articletype/adm/**");
+
         bean.addUrlPatterns("/category/adm");
         bean.addUrlPatterns("/category/adm/*");
-        bean.addUrlPatterns("/category/adm/**");
+
         bean.addUrlPatterns("/profile/adm");
         bean.addUrlPatterns("/profile/adm/*");
-        bean.addUrlPatterns("/profile/adm/**");
+
+        bean.addUrlPatterns("/article/adm");
+        bean.addUrlPatterns("/article/adm/*");
+
         bean.addUrlPatterns("/api/auth/verification/email/jwt");
+
         return bean;
     }
 
