@@ -23,7 +23,7 @@ import java.util.List;
 
        @PostMapping("/adm")
        public ResponseEntity<RegionDTO> create(@RequestBody RegionDTO regionDTO,HttpServletRequest request) {
-           Integer profileId = HttpRequestUtil.getProfileId(request,ProfileRole.ADMIN);
+//           Integer profileId = HttpRequestUtil.getProfileId(request,ProfileRole.ADMIN);
            String crated = regionService.crated(regionDTO);
            return ResponseEntity.ok(regionDTO);
        }

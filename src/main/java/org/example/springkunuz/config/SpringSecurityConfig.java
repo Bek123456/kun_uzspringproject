@@ -29,7 +29,7 @@ public class SpringSecurityConfig {
         UserDetails user = User.builder()
                 .username("user")
                 .password("{noop}" + password)
-                .roles("USER")
+                .roles("ADMIN")
                 .build();
 
         final DaoAuthenticationProvider authenticationProvider = new DaoAuthenticationProvider();
@@ -45,7 +45,7 @@ public class SpringSecurityConfig {
                     .requestMatchers("/init/admin").permitAll()
                     .requestMatchers("/init/**").permitAll()
                     .requestMatchers("/region/byLang").permitAll()
-                    .requestMatchers("region/adm/**").hasRole("ADMIN")
+                    .requestMatchers("region/adm/*").hasRole("ADMIN")
                     .requestMatchers("/article/publish").hasAnyRole("ADMIN","PUBLISHER")
                     .requestMatchers("/profile","/profile/*").hasRole("ADMIN")
                     .anyRequest()
