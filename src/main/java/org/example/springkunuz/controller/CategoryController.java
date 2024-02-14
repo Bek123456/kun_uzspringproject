@@ -7,10 +7,7 @@ import org.example.springkunuz.enums.AppLanguage;
 import org.example.springkunuz.enums.ProfileRole;
 import org.example.springkunuz.service.CategoryService;
 import org.example.springkunuz.util.HttpRequestUtil;
-import org.example.springkunuz.util.JWTUtil;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.HttpStatusCode;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -25,25 +22,25 @@ public class CategoryController {
     @PostMapping("/adm/created")
     public ResponseEntity<String>created(HttpServletRequest request,
                                          @RequestBody CategoryDTO categoryDTO){
-                JwtDTO jwtDTO= HttpRequestUtil.getJWTDTO(request,ProfileRole.ADMIN);
+                JwtDTO jwtDTO= HttpRequestUtil.getJWTDTO(request,ProfileRole.ROLE_ADMIN);
                 return ResponseEntity.ok(categoryService.created(categoryDTO));
     }
     @PutMapping("/adm/{byId}")
     public ResponseEntity<String>editById(@PathVariable Integer byId,@RequestBody CategoryDTO categoryDTO,
                                         HttpServletRequest request){
-       JwtDTO jwtDTO=HttpRequestUtil.getJWTDTO(request,ProfileRole.ADMIN);
+       JwtDTO jwtDTO=HttpRequestUtil.getJWTDTO(request,ProfileRole.ROLE_ADMIN);
         return ResponseEntity.ok(categoryService.editById(byId,categoryDTO));
     }
     @DeleteMapping("/adm/{deletedById}")
     public ResponseEntity<String>deleted(@PathVariable Integer deletedById,
                                        HttpServletRequest request){
-        JwtDTO jwtDTO=HttpRequestUtil.getJWTDTO(request,ProfileRole.ADMIN);
+        JwtDTO jwtDTO=HttpRequestUtil.getJWTDTO(request,ProfileRole.ROLE_ADMIN);
         return ResponseEntity.ok(categoryService.deletedById(deletedById));
     }
     @GetMapping("/adm/getAllOrderNumber")
     public ResponseEntity<List<CategoryDTO>>getAllOrderNumber(@RequestParam(value = "order_number")Integer order_number,
                                                               HttpServletRequest request){
-        JwtDTO jwtDTO=HttpRequestUtil.getJWTDTO(request,ProfileRole.ADMIN);
+        JwtDTO jwtDTO=HttpRequestUtil.getJWTDTO(request,ProfileRole.ROLE_ADMIN);
         List<CategoryDTO> allOrderNumber = categoryService.getAllOrderNumber(order_number);
         return ResponseEntity.ok(allOrderNumber);
     }

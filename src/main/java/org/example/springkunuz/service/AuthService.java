@@ -1,6 +1,7 @@
 package org.example.springkunuz.service;
 
 import io.jsonwebtoken.*;
+import lombok.extern.slf4j.Slf4j;
 import org.example.springkunuz.dto.AuthDTO;
 import org.example.springkunuz.dto.JwtDTO;
 import org.example.springkunuz.dto.ProfileDTO;
@@ -15,11 +16,14 @@ import org.example.springkunuz.util.JWTUtil;
 import org.example.springkunuz.util.MDUtil;
 import org.example.springkunuz.util.RandomUtil;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.support.ResourceBundleMessageSource;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
+import java.util.Locale;
 import java.util.Optional;
 @Service
+@Slf4j
 public class AuthService {
      @Autowired
      private ProfileRepository profileRepository;
@@ -31,11 +35,15 @@ public class AuthService {
      private EmailSendHistoryRepository emailSendHistoryRepository;
      @Autowired
      private SmsServerService smsServerService;
+     @Autowired
+     private ResourceBundleMessageSource resourceBundleMessageSource;
      public ProfileDTO auth(AuthDTO profile){
           Optional<ProfileEntity> optional = profileRepository.findByEmailAndPassword(profile.getEmail(),
                   MDUtil.encode(profile.getPassword()));
 
           if (optional.isEmpty()) {
+               resourceBundleMessageSource.getMessage("email.password.wrong",null,new Locale("en"));
+               log.warn("Email or Password is wrong{}",profile.getEmail());
                throw new AppBadException("Email or Password is wrong");
           }
 
@@ -48,7 +56,12 @@ public class AuthService {
           dto.setName(entity.getName());
           dto.setSurname(entity.getSurname());
           dto.setRole(entity.getRole());
-          dto.setJwt(JWTUtil.encode(entity.getId(),entity.getRole()));
+          dto.setJwt(JWTUtil.encode(entity.getEmail()
+
+
+
+
+                  ,entity.getRole()));
           return dto;
      }
      public String registration(RegistrationDTO dto) {
@@ -77,7 +90,7 @@ public class AuthService {
           entity.setEmail(dto.getEmail());
           entity.setPassword(MDUtil.encode(dto.getPassword()));
           entity.setStatus(ProfileStatus.REGISTRATION);
-          entity.setRole(ProfileRole.USER);
+          entity.setRole(ProfileRole.ROLE_USER);
           entity.setPhone(dto.getPhone());
           profileRepository.save(entity);
           String jwt=JWTUtil.encodeForEmail(entity.getId());

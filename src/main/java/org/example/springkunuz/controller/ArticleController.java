@@ -19,28 +19,28 @@ public class ArticleController {
     @PostMapping("/adm/create")
     public ResponseEntity<String>create(@RequestBody ArticleCreateDTO dto,
                                         HttpServletRequest request){
-        Integer moderatorId = HttpRequestUtil.getProfileId(request, ProfileRole.MODERATOR);
+        Integer moderatorId = HttpRequestUtil.getProfileId(request, ProfileRole.ROLE_MODERATOR);
         return ResponseEntity.ok(articleService.create(dto, moderatorId));
     }
     @PutMapping("/adm/edit/{articleId}")
     public ResponseEntity<String>edit(@RequestBody ArticleCreateDTO dto,
                                       @PathVariable(value = "articleId") String articleId,
                                       HttpServletRequest request){
-        JwtDTO jwtDTO=HttpRequestUtil.getJWTDTO(request,ProfileRole.ADMIN,ProfileRole.MODERATOR);
+        JwtDTO jwtDTO=HttpRequestUtil.getJWTDTO(request,ProfileRole.ROLE_ADMIN,ProfileRole.ROLE_MODERATOR);
         String edit = articleService.edit(dto, articleId, jwtDTO);
         return ResponseEntity.ok(edit);
     }
    @DeleteMapping("/adm/deleted/{articleId}")
     public ResponseEntity<String>deletedById(@PathVariable String articleId,
                                              HttpServletRequest request){
-        JwtDTO jwtDTO=HttpRequestUtil.getJWTDTO(request,ProfileRole.ADMIN,ProfileRole.MODERATOR);
+        JwtDTO jwtDTO=HttpRequestUtil.getJWTDTO(request,ProfileRole.ROLE_ADMIN,ProfileRole.ROLE_MODERATOR);
         return ResponseEntity.ok(articleService.deleted(articleId, jwtDTO.getId()));
    }
 
    @PutMapping("/adm/status/{articleId}")
     public ResponseEntity<String>editStatusById(@PathVariable String articleId,
                                                 HttpServletRequest request){
-        JwtDTO jwtDTO=HttpRequestUtil.getJWTDTO(request,ProfileRole.ADMIN,ProfileRole.MODERATOR);
+        JwtDTO jwtDTO=HttpRequestUtil.getJWTDTO(request,ProfileRole.ROLE_ADMIN,ProfileRole.ROLE_MODERATOR);
         return ResponseEntity.ok(articleService.editStatusById(articleId,jwtDTO.getId()));
    }
 }

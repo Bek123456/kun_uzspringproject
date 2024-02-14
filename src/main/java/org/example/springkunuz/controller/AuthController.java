@@ -3,6 +3,7 @@ package org.example.springkunuz.controller;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.persistence.Entity;
+import jakarta.servlet.http.HttpServletRequest;
 import jakarta.validation.Valid;
 import lombok.extern.slf4j.Slf4j;
 import org.example.springkunuz.dto.AuthDTO;
@@ -26,7 +27,7 @@ public class AuthController {
     //private Logger log= LoggerFactory.getLogger(AuthController.class);
     @PostMapping("/login")
     @Operation( summary = "Api for login", description = "this api used for authorization")
-    public ResponseEntity<ProfileDTO>login(@Valid @RequestBody  AuthDTO auth){
+    public ResponseEntity<ProfileDTO>login(HttpServletRequest request, @RequestBody  AuthDTO auth){
         log.trace("Login In Trace");
         log.debug("Login In Debug");
         log.info("Login {}",auth.getEmail());

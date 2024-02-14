@@ -10,13 +10,10 @@ import org.example.springkunuz.entity.ProfileEntity;
 import org.example.springkunuz.enums.ProfileRole;
 import org.example.springkunuz.service.ProfileService;
 import org.example.springkunuz.util.HttpRequestUtil;
-import org.example.springkunuz.util.JWTUtil;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Profile;
 import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -31,7 +28,7 @@ public class ProfileController {
     @PostMapping("/adm")
     public ResponseEntity<String>create(@RequestBody ProfileDTO profileDTO,
                                         HttpServletRequest request){
-        JwtDTO jwtDTO= HttpRequestUtil.getJWTDTO(request,ProfileRole.ADMIN);
+        JwtDTO jwtDTO= HttpRequestUtil.getJWTDTO(request,ProfileRole.ROLE_ADMIN);
         return ResponseEntity.ok(profileService.created(profileDTO));
     }
 
@@ -39,7 +36,7 @@ public class ProfileController {
     public ResponseEntity<String>edit(@PathVariable Integer id,
                                       @RequestBody ProfileDTO profileDTO,
                                       HttpServletRequest request){
-        JwtDTO jwtDTO= HttpRequestUtil.getJWTDTO(request,ProfileRole.ADMIN);
+        JwtDTO jwtDTO= HttpRequestUtil.getJWTDTO(request,ProfileRole.ROLE_ADMIN);
         String edit = profileService.edit(id, profileDTO);
         return ResponseEntity.ok(edit);
     }
@@ -48,7 +45,7 @@ public class ProfileController {
     public ResponseEntity<String>editDetail(@PathVariable Integer id,
                                             @RequestBody ProfileDTO profileDTO,
                                            HttpServletRequest request){
-        JwtDTO jwtDTO= HttpRequestUtil.getJWTDTO(request,ProfileRole.ADMIN);
+        JwtDTO jwtDTO= HttpRequestUtil.getJWTDTO(request,ProfileRole.ROLE_ADMIN);
         return ResponseEntity.ok(profileService.editDetail(id,profileDTO));
     }
 
@@ -56,21 +53,21 @@ public class ProfileController {
     public ResponseEntity<PageImpl<ProfileDTO>>getAllPage(@RequestParam(name = "page")Integer page,
                                                           @RequestParam(name = "size")Integer size,
                                                           HttpServletRequest request){
-        JwtDTO jwtDTO= HttpRequestUtil.getJWTDTO(request,ProfileRole.ADMIN);
+        JwtDTO jwtDTO= HttpRequestUtil.getJWTDTO(request,ProfileRole.ROLE_ADMIN);
         return ResponseEntity.ok(profileService.getAllPage(page,size));
     }
 
     @DeleteMapping("/adm/{id}")
     public ResponseEntity<String>deletedId(@PathVariable Integer id,
                                           HttpServletRequest request){
-        JwtDTO jwtDTO= HttpRequestUtil.getJWTDTO(request,ProfileRole.ADMIN);
+        JwtDTO jwtDTO= HttpRequestUtil.getJWTDTO(request,ProfileRole.ROLE_ADMIN);
        return ResponseEntity.ok(profileService.deleteById(id));
     }
     @PutMapping("/adm/editPhone/{id}")
     public ResponseEntity<String>editPhone(@PathVariable Integer id,
                                            @RequestBody ProfileDTO profileDTO,
                                           HttpServletRequest request){
-        JwtDTO jwtDTO= HttpRequestUtil.getJWTDTO(request,ProfileRole.ADMIN);
+        JwtDTO jwtDTO= HttpRequestUtil.getJWTDTO(request,ProfileRole.ROLE_ADMIN);
         return ResponseEntity.ok(profileService.editPhone(id,profileDTO));
     }
     @GetMapping("/filter")

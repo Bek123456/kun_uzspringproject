@@ -31,6 +31,15 @@ public class SecuredFilterConfig {
 
         bean.addUrlPatterns("/api/auth/verification/email/jwt");
 
+        bean.addUrlPatterns("/articlelike/*");
+        bean.addUrlPatterns("/articlelike/created/*");
+
+        bean.addUrlPatterns("/comment");
+        bean.addUrlPatterns("/comment/*");
+
+        bean.addUrlPatterns("/commentlike");
+        bean.addUrlPatterns("/commentlike/*");
+
         return bean;
     }
 

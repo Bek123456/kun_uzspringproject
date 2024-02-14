@@ -162,8 +162,10 @@
 9. CommentLike
     1. Like (ANY)
         (comment_id)
-    2. Dislike (ANY
-    3. Remove (ANY
+    2. Dislike (ANY)
+       (comment_id)
+    3. Remove (ANY)
+       (comment_id)
 
 10. SavedArticle
     1. Create (ANY)
