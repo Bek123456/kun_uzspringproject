@@ -28,6 +28,7 @@
 13. SmsHistory (all send sms from system)
     id, phone,message,status,type(if necessary),created_date,(used_date if necessary)
     status - NEW,USED  (when sms used  after sending to phone the sms status should be changed to USED.)
+
 14. EmailHistory
     id, message, email, created_data
 

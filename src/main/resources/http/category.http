@@ -1,85 +1,14 @@
 POST http://localhost:8080/category/adm/created
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MDczODI5OTgsImlkIjoxLCJyb2xlIjoiQURNSU4iLCJleHAiOjE3MDc0NjkzOTgsImlzcyI6Ikt1blV6VGVzdCJ9.hAghkpx-CmgwbYHAcNKK6NiaGFwx-RpBfaxheI_3kitUBm5Sej0JfUP8zrMoapl004fzzcX3O33eqfBKx6z7vg
-
-
-{
-  "nameUz": "1-uz",
-  "nameEng": "1-eng",
-  "nameRu": "1-ru",
-  "orderNumber": 1
-}
-
-###
-PUT http://localhost:8080/category/5
-Content-Type: application/json
-Authorization: eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MDY0MzE4NDQsImlkIjoxLCJyb2xlIjoiQURNSU4iLCJleHAiOjE3MDY1MTgyNDQsImlzcyI6Ikt1blV6VGVzdCJ9.gukxe6SfoGsxjx6iZO2CG_agsjntiwzoifsPL2P2LiiR4ESGnNA7asB4_KgUIIdm5gqjPKk1jPadfeF-uiFMcw
-
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MDgwMDYzMTMsImVtYWlsIjoiYWRtaW5AbWFpbC5ydSIsInJvbGUiOiJST0xFX0FETUlOIiwiZXhwIjoxNzA4MDkyNzEzLCJpc3MiOiJLdW5VelRlc3QifQ.6GSN4_ecHyLZ07CyPo7bV0EFhVcUHHY0JvL3lbFAiUsOVM7j44Y_GgW1htGaTDtqqOt8vlNATtv-NSSDtruz5g
 
 {
-"nameUz": "5A-uz",
-"nameEng": "5A-ru",
-"nameRu": "5A-eng",
-"orderNumber": 0
+
+  "nameUz": "cu1",
+  "nameEng": "ce1",
+  "nameRu": "cr1",
+  "orderNumber": 0
 }
-###
-GET http://localhost:8080/category/getAllOrderNumber?order_number=1
-Authorization: eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MDY0MzE4NDQsImlkIjoxLCJyb2xlIjoiQURNSU4iLCJleHAiOjE3MDY1MTgyNDQsImlzcyI6Ikt1blV6VGVzdCJ9.gukxe6SfoGsxjx6iZO2CG_agsjntiwzoifsPL2P2LiiR4ESGnNA7asB4_KgUIIdm5gqjPKk1jPadfeF-uiFMcw
-
-####
-POST http://localhost:8080/category/adm/created
-Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MDY0MzE4NDQsImlkIjoxLCJyb2xlIjoiQURNSU4iLCJleHAiOjE3MDY1MTgyNDQsImlzcyI6Ikt1blV6VGVzdCJ9.gukxe6SfoGsxjx6iZO2CG_agsjntiwzoifsPL2P2LiiR4ESGnNA7asB4_KgUIIdm5gqjPKk1jPadfeF-uiFMcw
-
-
-{
-  "nameUz": "uuuu3",
-  "nameEng": "eeee3",
-  "nameRu": "rrrrr3",
-  "orderNumber": 4
-}
-####
-PUT http://localhost:8080/category/adm/1
-Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MDY0MzE4NDQsImlkIjoxLCJyb2xlIjoiQURNSU4iLCJleHAiOjE3MDY1MTgyNDQsImlzcyI6Ikt1blV6VGVzdCJ9.gukxe6SfoGsxjx6iZO2CG_agsjntiwzoifsPL2P2LiiR4ESGnNA7asB4_KgUIIdm5gqjPKk1jPadfeF-uiFMcw
-
-
-{
-  "nameUz": "UUUU",
-  "nameEng": "EEEE",
-  "nameRu": "RRRRR",
-  "orderNumber": 2
-}
-
-###
-POST http://localhost:8080/category/adm/created
-Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MDY1MjIyMzYsImlkIjoxLCJyb2xlIjoiQURNSU4iLCJleHAiOjE3MDY2MDg2MzYsImlzcyI6Ikt1blV6VGVzdCJ9.Wo9rOpy1DFgn73IeaiVAYCQgUDPWE6ZfH_Dl1KYiXqJxLSe5tPbso1ZOl49GWREkHpKRajl8obQ10hCin-viBw
-
-{
-  "nameUz": "cuuuu",
-  "nameEng": "ceeeee",
-  "nameRu": "crrrrrr",
-  "orderNumber": 1
-}
-
-###
-PUT http://localhost:8080/category/adm/1
-Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MDY1MjIyMzYsImlkIjoxLCJyb2xlIjoiQURNSU4iLCJleHAiOjE3MDY2MDg2MzYsImlzcyI6Ikt1blV6VGVzdCJ9.Wo9rOpy1DFgn73IeaiVAYCQgUDPWE6ZfH_Dl1KYiXqJxLSe5tPbso1ZOl49GWREkHpKRajl8obQ10hCin-viBw
-
-
-{
-  "nameUz": "UUUU",
-  "nameEng": "EEEE",
-  "nameRu": "RRRRR",
-  "orderNumber": 2
-}
-####
-DELETE http://localhost:8080/category/adm/2
-Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MDY1MjIyMzYsImlkIjoxLCJyb2xlIjoiQURNSU4iLCJleHAiOjE3MDY2MDg2MzYsImlzcyI6Ikt1blV6VGVzdCJ9.Wo9rOpy1DFgn73IeaiVAYCQgUDPWE6ZfH_Dl1KYiXqJxLSe5tPbso1ZOl49GWREkHpKRajl8obQ10hCin-viBw
-
-
 
 
 

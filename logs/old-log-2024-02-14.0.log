@@ -1,0 +1,459 @@
+14 Feb 2024 - 19:35:34.234 INFO  org.example.springkunuz.Application - Starting Application using Java 21.0.1 with PID 3792 (D:\programer\proekt\spring boot projectlar\spring-kun.uz\target\classes started by acer in D:\programer\proekt\spring boot projectlar\spring-kun.uz)
+14 Feb 2024 - 19:35:34.260 INFO  org.example.springkunuz.Application - The following 1 profile is active: "dev"
+14 Feb 2024 - 19:35:35.840 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+14 Feb 2024 - 19:35:36.028 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 172 ms. Found 11 JPA repository interfaces.
+14 Feb 2024 - 19:35:37.190 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+14 Feb 2024 - 19:35:37.208 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+14 Feb 2024 - 19:35:37.210 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.18]
+14 Feb 2024 - 19:35:37.300 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+14 Feb 2024 - 19:35:37.300 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2984 ms
+14 Feb 2024 - 19:35:37.471 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+14 Feb 2024 - 19:35:37.563 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.1.Final
+14 Feb 2024 - 19:35:37.608 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+14 Feb 2024 - 19:35:37.897 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+14 Feb 2024 - 19:35:37.929 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+14 Feb 2024 - 19:35:38.172 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6cc8adff
+14 Feb 2024 - 19:35:38.174 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+14 Feb 2024 - 19:35:39.671 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+14 Feb 2024 - 19:35:39.932 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+14 Feb 2024 - 19:35:40.166 INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+14 Feb 2024 - 19:35:41.142 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+14 Feb 2024 - 19:35:41.497 INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@12039ae0, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1fb320de, org.springframework.security.web.context.SecurityContextHolderFilter@644a12be, org.springframework.security.web.header.HeaderWriterFilter@4644b1c6, org.springframework.security.web.authentication.logout.LogoutFilter@2495a351, org.example.springkunuz.config.JwtTokenFilter@72259917, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@274010fe, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@975f349, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@633e4742, org.springframework.security.web.access.ExceptionTranslationFilter@58965e17, org.springframework.security.web.access.intercept.AuthorizationFilter@2f9a7d6f]
+14 Feb 2024 - 19:35:41.933 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+14 Feb 2024 - 19:35:41.942 INFO  org.example.springkunuz.Application - Started Application in 8.415 seconds (process running for 9.555)
+14 Feb 2024 - 19:35:41.953 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+14 Feb 2024 - 19:35:41.956 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+14 Feb 2024 - 19:35:41.961 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+14 Feb 2024 - 19:35:46.504 INFO  org.example.springkunuz.Application - Starting Application using Java 21.0.1 with PID 16444 (D:\programer\proekt\spring boot projectlar\spring-kun.uz\target\classes started by acer in D:\programer\proekt\spring boot projectlar\spring-kun.uz)
+14 Feb 2024 - 19:35:46.516 INFO  org.example.springkunuz.Application - The following 1 profile is active: "dev"
+14 Feb 2024 - 19:35:47.413 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+14 Feb 2024 - 19:35:47.480 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 60 ms. Found 11 JPA repository interfaces.
+14 Feb 2024 - 19:35:48.017 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+14 Feb 2024 - 19:35:48.026 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+14 Feb 2024 - 19:35:48.027 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.18]
+14 Feb 2024 - 19:35:48.100 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+14 Feb 2024 - 19:35:48.101 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1541 ms
+14 Feb 2024 - 19:35:48.219 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+14 Feb 2024 - 19:35:48.281 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.1.Final
+14 Feb 2024 - 19:35:48.318 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+14 Feb 2024 - 19:35:48.576 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+14 Feb 2024 - 19:35:48.601 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+14 Feb 2024 - 19:35:48.908 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5d96d434
+14 Feb 2024 - 19:35:48.909 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+14 Feb 2024 - 19:35:50.180 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+14 Feb 2024 - 19:35:50.354 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+14 Feb 2024 - 19:35:50.553 INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+14 Feb 2024 - 19:35:51.397 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+14 Feb 2024 - 19:35:51.720 INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@428943a4, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6ca95b1e, org.springframework.security.web.context.SecurityContextHolderFilter@376ba8e3, org.springframework.security.web.header.HeaderWriterFilter@2692910f, org.springframework.security.web.authentication.logout.LogoutFilter@78571a17, org.example.springkunuz.config.JwtTokenFilter@4b682e71, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2c84d6c4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2a2d0cff, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7c305624, org.springframework.security.web.access.ExceptionTranslationFilter@68a0a4ae, org.springframework.security.web.access.intercept.AuthorizationFilter@1540b926]
+14 Feb 2024 - 19:35:52.106 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+14 Feb 2024 - 19:35:52.115 INFO  org.example.springkunuz.Application - Started Application in 6.102 seconds (process running for 6.865)
+14 Feb 2024 - 19:35:55.383 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+14 Feb 2024 - 19:35:55.383 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+14 Feb 2024 - 19:35:55.385 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+14 Feb 2024 - 19:38:23.966 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+14 Feb 2024 - 19:38:23.969 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+14 Feb 2024 - 19:38:23.976 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+14 Feb 2024 - 19:38:30.879 INFO  org.example.springkunuz.Application - Starting Application using Java 21.0.1 with PID 9324 (D:\programer\proekt\spring boot projectlar\spring-kun.uz\target\classes started by acer in D:\programer\proekt\spring boot projectlar\spring-kun.uz)
+14 Feb 2024 - 19:38:30.894 INFO  org.example.springkunuz.Application - The following 1 profile is active: "dev"
+14 Feb 2024 - 19:38:31.800 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+14 Feb 2024 - 19:38:31.877 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 71 ms. Found 11 JPA repository interfaces.
+14 Feb 2024 - 19:38:32.450 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+14 Feb 2024 - 19:38:32.459 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+14 Feb 2024 - 19:38:32.460 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.18]
+14 Feb 2024 - 19:38:32.534 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+14 Feb 2024 - 19:38:32.534 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1591 ms
+14 Feb 2024 - 19:38:32.658 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+14 Feb 2024 - 19:38:32.749 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.1.Final
+14 Feb 2024 - 19:38:32.791 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+14 Feb 2024 - 19:38:32.976 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+14 Feb 2024 - 19:38:32.996 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+14 Feb 2024 - 19:38:33.196 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@58636b50
+14 Feb 2024 - 19:38:33.198 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+14 Feb 2024 - 19:38:34.526 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+14 Feb 2024 - 19:38:34.701 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+14 Feb 2024 - 19:38:34.895 INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+14 Feb 2024 - 19:38:35.695 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+14 Feb 2024 - 19:38:36.017 INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@52f1f54, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2495a351, org.springframework.security.web.context.SecurityContextHolderFilter@a6e0e5f, org.springframework.security.web.header.HeaderWriterFilter@fa200ab, org.springframework.security.web.authentication.logout.LogoutFilter@44cd3ea9, org.example.springkunuz.config.JwtTokenFilter@4d609cc3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3116e9d2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@312eb, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@245155b8, org.springframework.security.web.access.ExceptionTranslationFilter@1b60c196, org.springframework.security.web.access.intercept.AuthorizationFilter@36b6ce5d]
+14 Feb 2024 - 19:38:36.388 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+14 Feb 2024 - 19:38:36.396 INFO  org.example.springkunuz.Application - Started Application in 6.056 seconds (process running for 6.78)
+14 Feb 2024 - 19:38:39.680 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+14 Feb 2024 - 19:38:39.681 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+14 Feb 2024 - 19:38:39.683 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+14 Feb 2024 - 19:39:30.159 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+14 Feb 2024 - 19:39:30.161 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+14 Feb 2024 - 19:39:30.167 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+14 Feb 2024 - 19:39:32.851 INFO  org.example.springkunuz.Application - Starting Application using Java 21.0.1 with PID 5540 (D:\programer\proekt\spring boot projectlar\spring-kun.uz\target\classes started by acer in D:\programer\proekt\spring boot projectlar\spring-kun.uz)
+14 Feb 2024 - 19:39:32.865 INFO  org.example.springkunuz.Application - The following 1 profile is active: "dev"
+14 Feb 2024 - 19:39:33.741 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+14 Feb 2024 - 19:39:33.812 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 65 ms. Found 11 JPA repository interfaces.
+14 Feb 2024 - 19:39:34.345 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+14 Feb 2024 - 19:39:34.355 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+14 Feb 2024 - 19:39:34.355 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.18]
+14 Feb 2024 - 19:39:34.424 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+14 Feb 2024 - 19:39:34.424 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1511 ms
+14 Feb 2024 - 19:39:34.542 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+14 Feb 2024 - 19:39:34.603 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.1.Final
+14 Feb 2024 - 19:39:34.633 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+14 Feb 2024 - 19:39:34.802 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+14 Feb 2024 - 19:39:34.850 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+14 Feb 2024 - 19:39:35.041 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@63814bbe
+14 Feb 2024 - 19:39:35.043 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+14 Feb 2024 - 19:39:36.261 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+14 Feb 2024 - 19:39:36.445 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+14 Feb 2024 - 19:39:36.630 INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+14 Feb 2024 - 19:39:37.485 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+14 Feb 2024 - 19:39:37.831 INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2dc4b58a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@44cd3ea9, org.springframework.security.web.context.SecurityContextHolderFilter@1768c77f, org.springframework.security.web.header.HeaderWriterFilter@40eb85e9, org.springframework.security.web.authentication.logout.LogoutFilter@1540b926, org.example.springkunuz.config.JwtTokenFilter@591cda84, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1192d1f5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@47ba8e3c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@352df548, org.springframework.security.web.access.ExceptionTranslationFilter@2c84d6c4, org.springframework.security.web.access.intercept.AuthorizationFilter@550482aa]
+14 Feb 2024 - 19:39:38.232 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+14 Feb 2024 - 19:39:38.242 INFO  org.example.springkunuz.Application - Started Application in 5.841 seconds (process running for 6.525)
+14 Feb 2024 - 19:39:51.969 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+14 Feb 2024 - 19:39:51.970 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+14 Feb 2024 - 19:39:51.973 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+14 Feb 2024 - 19:40:18.441 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+14 Feb 2024 - 19:40:18.443 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+14 Feb 2024 - 19:40:18.447 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+14 Feb 2024 - 19:40:22.323 INFO  org.example.springkunuz.Application - Starting Application using Java 21.0.1 with PID 6584 (D:\programer\proekt\spring boot projectlar\spring-kun.uz\target\classes started by acer in D:\programer\proekt\spring boot projectlar\spring-kun.uz)
+14 Feb 2024 - 19:40:22.336 INFO  org.example.springkunuz.Application - The following 1 profile is active: "dev"
+14 Feb 2024 - 19:40:23.296 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+14 Feb 2024 - 19:40:23.376 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 72 ms. Found 11 JPA repository interfaces.
+14 Feb 2024 - 19:40:24.083 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+14 Feb 2024 - 19:40:24.094 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+14 Feb 2024 - 19:40:24.095 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.18]
+14 Feb 2024 - 19:40:24.161 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+14 Feb 2024 - 19:40:24.161 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1777 ms
+14 Feb 2024 - 19:40:24.316 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+14 Feb 2024 - 19:40:24.395 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.1.Final
+14 Feb 2024 - 19:40:24.433 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+14 Feb 2024 - 19:40:24.686 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+14 Feb 2024 - 19:40:24.714 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+14 Feb 2024 - 19:40:24.935 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@79d14037
+14 Feb 2024 - 19:40:24.936 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+14 Feb 2024 - 19:40:26.425 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+14 Feb 2024 - 19:40:26.615 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+14 Feb 2024 - 19:40:26.929 INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+14 Feb 2024 - 19:40:27.967 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+14 Feb 2024 - 19:40:28.365 INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6453c126, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6565691a, org.springframework.security.web.context.SecurityContextHolderFilter@6eef7af3, org.springframework.security.web.header.HeaderWriterFilter@2d95c3ef, org.springframework.security.web.authentication.logout.LogoutFilter@17b3b021, org.example.springkunuz.config.JwtTokenFilter@2d094add, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@72cbe3b6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7aadb5e8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1a5b8f77, org.springframework.security.web.access.ExceptionTranslationFilter@15beb40b, org.springframework.security.web.access.intercept.AuthorizationFilter@c1e7bea]
+14 Feb 2024 - 19:40:28.847 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+14 Feb 2024 - 19:40:28.857 INFO  org.example.springkunuz.Application - Started Application in 6.983 seconds (process running for 8.625)
+14 Feb 2024 - 19:40:33.355 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+14 Feb 2024 - 19:40:33.355 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+14 Feb 2024 - 19:40:33.358 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+14 Feb 2024 - 19:42:25.028 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+14 Feb 2024 - 19:42:25.031 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+14 Feb 2024 - 19:42:25.038 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+14 Feb 2024 - 19:42:28.123 INFO  org.example.springkunuz.Application - Starting Application using Java 21.0.1 with PID 3624 (D:\programer\proekt\spring boot projectlar\spring-kun.uz\target\classes started by acer in D:\programer\proekt\spring boot projectlar\spring-kun.uz)
+14 Feb 2024 - 19:42:28.136 INFO  org.example.springkunuz.Application - The following 1 profile is active: "dev"
+14 Feb 2024 - 19:42:29.257 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+14 Feb 2024 - 19:42:29.344 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 80 ms. Found 11 JPA repository interfaces.
+14 Feb 2024 - 19:42:29.936 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+14 Feb 2024 - 19:42:29.948 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+14 Feb 2024 - 19:42:29.948 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.18]
+14 Feb 2024 - 19:42:30.018 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+14 Feb 2024 - 19:42:30.019 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1834 ms
+14 Feb 2024 - 19:42:30.152 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+14 Feb 2024 - 19:42:30.211 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.1.Final
+14 Feb 2024 - 19:42:30.245 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+14 Feb 2024 - 19:42:30.442 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+14 Feb 2024 - 19:42:30.466 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+14 Feb 2024 - 19:42:30.723 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3e2c4d4b
+14 Feb 2024 - 19:42:30.726 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+14 Feb 2024 - 19:42:32.155 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+14 Feb 2024 - 19:42:32.350 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+14 Feb 2024 - 19:42:32.555 INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+14 Feb 2024 - 19:42:33.416 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+14 Feb 2024 - 19:42:33.761 INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3a07afe6, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@428943a4, org.springframework.security.web.context.SecurityContextHolderFilter@4f6938cb, org.springframework.security.web.header.HeaderWriterFilter@426753a6, org.springframework.security.web.authentication.logout.LogoutFilter@4c902a72, org.example.springkunuz.config.JwtTokenFilter@5a90ea5c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5434de8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2c84d6c4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6ca95b1e, org.springframework.security.web.access.ExceptionTranslationFilter@6fad6743, org.springframework.security.web.access.intercept.AuthorizationFilter@43bda665]
+14 Feb 2024 - 19:42:34.183 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+14 Feb 2024 - 19:42:34.191 INFO  org.example.springkunuz.Application - Started Application in 6.617 seconds (process running for 7.35)
+14 Feb 2024 - 19:42:36.011 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+14 Feb 2024 - 19:42:36.011 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+14 Feb 2024 - 19:42:36.015 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+14 Feb 2024 - 19:45:04.618 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+14 Feb 2024 - 19:45:04.620 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+14 Feb 2024 - 19:45:04.624 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+14 Feb 2024 - 19:45:10.111 INFO  org.example.springkunuz.Application - Starting Application using Java 21.0.1 with PID 8988 (D:\programer\proekt\spring boot projectlar\spring-kun.uz\target\classes started by acer in D:\programer\proekt\spring boot projectlar\spring-kun.uz)
+14 Feb 2024 - 19:45:10.125 INFO  org.example.springkunuz.Application - The following 1 profile is active: "dev"
+14 Feb 2024 - 19:45:11.117 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+14 Feb 2024 - 19:45:11.192 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 69 ms. Found 11 JPA repository interfaces.
+14 Feb 2024 - 19:45:11.850 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+14 Feb 2024 - 19:45:11.861 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+14 Feb 2024 - 19:45:11.862 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.18]
+14 Feb 2024 - 19:45:11.950 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+14 Feb 2024 - 19:45:11.951 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1767 ms
+14 Feb 2024 - 19:45:12.098 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+14 Feb 2024 - 19:45:12.146 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.1.Final
+14 Feb 2024 - 19:45:12.173 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+14 Feb 2024 - 19:45:12.359 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+14 Feb 2024 - 19:45:12.386 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+14 Feb 2024 - 19:45:12.549 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@44de8e00
+14 Feb 2024 - 19:45:12.551 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+14 Feb 2024 - 19:45:14.020 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+14 Feb 2024 - 19:45:14.198 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+14 Feb 2024 - 19:45:14.410 INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+14 Feb 2024 - 19:45:15.306 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+14 Feb 2024 - 19:45:15.635 INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3af4b14e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1de78f97, org.springframework.security.web.context.SecurityContextHolderFilter@1c7aa676, org.springframework.security.web.header.HeaderWriterFilter@47ba8e3c, org.springframework.security.web.authentication.logout.LogoutFilter@73534675, org.example.springkunuz.config.JwtTokenFilter@6e212f38, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5e9f4f76, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@43ee4942, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@36b6ce5d, org.springframework.security.web.access.ExceptionTranslationFilter@bb0dcb6, org.springframework.security.web.access.intercept.AuthorizationFilter@4dbcc8ce]
+14 Feb 2024 - 19:45:16.065 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+14 Feb 2024 - 19:45:16.075 INFO  org.example.springkunuz.Application - Started Application in 6.45 seconds (process running for 7.231)
+14 Feb 2024 - 19:45:17.169 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+14 Feb 2024 - 19:45:17.169 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+14 Feb 2024 - 19:45:17.172 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+14 Feb 2024 - 19:45:23.358 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+14 Feb 2024 - 19:45:23.360 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+14 Feb 2024 - 19:45:23.362 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+14 Feb 2024 - 19:45:25.912 INFO  org.example.springkunuz.Application - Starting Application using Java 21.0.1 with PID 312 (D:\programer\proekt\spring boot projectlar\spring-kun.uz\target\classes started by acer in D:\programer\proekt\spring boot projectlar\spring-kun.uz)
+14 Feb 2024 - 19:45:25.925 INFO  org.example.springkunuz.Application - The following 1 profile is active: "dev"
+14 Feb 2024 - 19:45:26.801 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+14 Feb 2024 - 19:45:26.874 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 67 ms. Found 11 JPA repository interfaces.
+14 Feb 2024 - 19:45:27.433 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+14 Feb 2024 - 19:45:27.443 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+14 Feb 2024 - 19:45:27.443 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.18]
+14 Feb 2024 - 19:45:27.516 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+14 Feb 2024 - 19:45:27.516 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1543 ms
+14 Feb 2024 - 19:45:27.632 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+14 Feb 2024 - 19:45:27.698 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.1.Final
+14 Feb 2024 - 19:45:27.735 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+14 Feb 2024 - 19:45:27.927 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+14 Feb 2024 - 19:45:27.959 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+14 Feb 2024 - 19:45:28.229 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@70b196d3
+14 Feb 2024 - 19:45:28.230 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+14 Feb 2024 - 19:45:29.457 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+14 Feb 2024 - 19:45:29.638 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+14 Feb 2024 - 19:45:29.841 INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+14 Feb 2024 - 19:45:30.666 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+14 Feb 2024 - 19:45:30.979 INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4b6cb083, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3644d305, org.springframework.security.web.context.SecurityContextHolderFilter@312eb, org.springframework.security.web.header.HeaderWriterFilter@a6e0e5f, org.springframework.security.web.authentication.logout.LogoutFilter@4dbcc8ce, org.example.springkunuz.config.JwtTokenFilter@6fb514db, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@58965e17, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5e4874ae, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3fc261b7, org.springframework.security.web.access.ExceptionTranslationFilter@5e9f4f76, org.springframework.security.web.access.intercept.AuthorizationFilter@2495a351]
+14 Feb 2024 - 19:45:31.339 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+14 Feb 2024 - 19:45:31.347 INFO  org.example.springkunuz.Application - Started Application in 5.931 seconds (process running for 6.632)
+14 Feb 2024 - 19:45:45.580 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+14 Feb 2024 - 19:45:45.580 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+14 Feb 2024 - 19:45:45.582 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+14 Feb 2024 - 19:47:46.129 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+14 Feb 2024 - 19:47:46.131 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+14 Feb 2024 - 19:47:46.138 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+14 Feb 2024 - 19:47:49.286 INFO  org.example.springkunuz.Application - Starting Application using Java 21.0.1 with PID 7788 (D:\programer\proekt\spring boot projectlar\spring-kun.uz\target\classes started by acer in D:\programer\proekt\spring boot projectlar\spring-kun.uz)
+14 Feb 2024 - 19:47:49.301 INFO  org.example.springkunuz.Application - The following 1 profile is active: "dev"
+14 Feb 2024 - 19:47:50.574 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+14 Feb 2024 - 19:47:50.647 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 65 ms. Found 11 JPA repository interfaces.
+14 Feb 2024 - 19:47:51.388 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+14 Feb 2024 - 19:47:51.412 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+14 Feb 2024 - 19:47:51.412 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.18]
+14 Feb 2024 - 19:47:51.493 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+14 Feb 2024 - 19:47:51.493 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2134 ms
+14 Feb 2024 - 19:47:51.671 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+14 Feb 2024 - 19:47:51.724 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.1.Final
+14 Feb 2024 - 19:47:51.753 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+14 Feb 2024 - 19:47:52.008 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+14 Feb 2024 - 19:47:52.041 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+14 Feb 2024 - 19:47:52.274 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@70b196d3
+14 Feb 2024 - 19:47:52.275 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+14 Feb 2024 - 19:47:53.807 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+14 Feb 2024 - 19:47:54.023 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+14 Feb 2024 - 19:47:54.334 INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+14 Feb 2024 - 19:47:55.402 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+14 Feb 2024 - 19:47:55.944 INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@36b6ce5d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1a4eb392, org.springframework.security.web.context.SecurityContextHolderFilter@5e9f4f76, org.springframework.security.web.header.HeaderWriterFilter@1b60c196, org.springframework.security.web.authentication.logout.LogoutFilter@2b7b6f58, org.example.springkunuz.config.JwtTokenFilter@4b548913, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@a6e0e5f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@15d6f0e1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@52f1f54, org.springframework.security.web.access.ExceptionTranslationFilter@47ba8e3c, org.springframework.security.web.access.intercept.AuthorizationFilter@3af4b14e]
+14 Feb 2024 - 19:47:56.549 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+14 Feb 2024 - 19:47:56.561 INFO  org.example.springkunuz.Application - Started Application in 7.827 seconds (process running for 8.623)
+14 Feb 2024 - 19:47:58.955 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+14 Feb 2024 - 19:47:58.956 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+14 Feb 2024 - 19:47:58.959 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+14 Feb 2024 - 19:49:06.842 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+14 Feb 2024 - 19:49:06.845 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+14 Feb 2024 - 19:49:06.852 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+14 Feb 2024 - 19:49:19.819 INFO  org.example.springkunuz.Application - Starting Application using Java 21.0.1 with PID 7876 (D:\programer\proekt\spring boot projectlar\spring-kun.uz\target\classes started by acer in D:\programer\proekt\spring boot projectlar\spring-kun.uz)
+14 Feb 2024 - 19:49:19.841 INFO  org.example.springkunuz.Application - The following 1 profile is active: "dev"
+14 Feb 2024 - 19:49:20.957 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+14 Feb 2024 - 19:49:21.035 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 70 ms. Found 11 JPA repository interfaces.
+14 Feb 2024 - 19:49:21.724 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+14 Feb 2024 - 19:49:21.756 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+14 Feb 2024 - 19:49:21.760 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.18]
+14 Feb 2024 - 19:49:21.846 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+14 Feb 2024 - 19:49:21.847 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1953 ms
+14 Feb 2024 - 19:49:22.009 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+14 Feb 2024 - 19:49:22.073 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.1.Final
+14 Feb 2024 - 19:49:22.102 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+14 Feb 2024 - 19:49:22.349 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+14 Feb 2024 - 19:49:22.380 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+14 Feb 2024 - 19:49:22.625 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@154864f8
+14 Feb 2024 - 19:49:22.627 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+14 Feb 2024 - 19:49:24.407 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+14 Feb 2024 - 19:49:24.605 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+14 Feb 2024 - 19:49:24.869 INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+14 Feb 2024 - 19:49:25.995 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+14 Feb 2024 - 19:49:26.465 INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@58965e17, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5e4874ae, org.springframework.security.web.context.SecurityContextHolderFilter@546ab02b, org.springframework.security.web.header.HeaderWriterFilter@5bee88e3, org.springframework.security.web.authentication.logout.LogoutFilter@1c7aa676, org.example.springkunuz.config.JwtTokenFilter@6965c32, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4485ca30, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6415112c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4644b1c6, org.springframework.security.web.access.ExceptionTranslationFilter@73e4ecb, org.springframework.security.web.access.intercept.AuthorizationFilter@312eb]
+14 Feb 2024 - 19:49:27.007 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+14 Feb 2024 - 19:49:27.035 INFO  org.example.springkunuz.Application - Started Application in 7.765 seconds (process running for 8.847)
+14 Feb 2024 - 19:49:31.400 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+14 Feb 2024 - 19:49:31.401 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+14 Feb 2024 - 19:49:31.402 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+14 Feb 2024 - 19:49:42.483 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+14 Feb 2024 - 19:49:42.485 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+14 Feb 2024 - 19:49:42.492 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+14 Feb 2024 - 19:50:25.264 INFO  org.example.springkunuz.Application - Starting Application using Java 21.0.1 with PID 13056 (D:\programer\proekt\spring boot projectlar\spring-kun.uz\target\classes started by acer in D:\programer\proekt\spring boot projectlar\spring-kun.uz)
+14 Feb 2024 - 19:50:25.284 INFO  org.example.springkunuz.Application - The following 1 profile is active: "dev"
+14 Feb 2024 - 19:50:26.574 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+14 Feb 2024 - 19:50:26.679 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 95 ms. Found 11 JPA repository interfaces.
+14 Feb 2024 - 19:50:27.477 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+14 Feb 2024 - 19:50:27.489 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+14 Feb 2024 - 19:50:27.490 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.18]
+14 Feb 2024 - 19:50:27.560 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+14 Feb 2024 - 19:50:27.561 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2212 ms
+14 Feb 2024 - 19:50:27.710 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+14 Feb 2024 - 19:50:27.787 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.1.Final
+14 Feb 2024 - 19:50:27.822 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+14 Feb 2024 - 19:50:28.079 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+14 Feb 2024 - 19:50:28.111 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+14 Feb 2024 - 19:50:28.352 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7c206b14
+14 Feb 2024 - 19:50:28.356 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+14 Feb 2024 - 19:50:30.233 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+14 Feb 2024 - 19:50:30.445 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+14 Feb 2024 - 19:50:30.692 INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+14 Feb 2024 - 19:50:31.863 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+14 Feb 2024 - 19:50:32.354 INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@10fef3d1, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3fb8e614, org.springframework.security.web.context.SecurityContextHolderFilter@1f953e51, org.springframework.security.web.header.HeaderWriterFilter@329cdafa, org.springframework.security.web.authentication.logout.LogoutFilter@77cac3b, org.example.springkunuz.config.JwtTokenFilter@598f065f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@15beb40b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1bc41170, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@35007b7a, org.springframework.security.web.access.ExceptionTranslationFilter@2680474c, org.springframework.security.web.access.intercept.AuthorizationFilter@17b3b021]
+14 Feb 2024 - 19:50:32.887 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+14 Feb 2024 - 19:50:32.899 INFO  org.example.springkunuz.Application - Started Application in 8.308 seconds (process running for 9.357)
+14 Feb 2024 - 19:50:34.088 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+14 Feb 2024 - 19:50:34.088 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+14 Feb 2024 - 19:50:34.090 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+14 Feb 2024 - 19:50:34.218 INFO  o.e.s.controller.AuthController - Login admin@mail.ru1
+14 Feb 2024 - 19:50:34.218 WARN  o.e.s.controller.AuthController - Login admin@mail.ru1
+14 Feb 2024 - 19:50:34.218 ERROR o.e.s.controller.AuthController - Login admin@mail.ru1
+14 Feb 2024 - 19:50:38.426 WARN  o.e.springkunuz.service.AuthService - Email or Password is wrongadmin@mail.ru1
+14 Feb 2024 - 20:00:04.193 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+14 Feb 2024 - 20:00:04.195 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+14 Feb 2024 - 20:00:04.203 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+14 Feb 2024 - 20:00:07.685 INFO  org.example.springkunuz.Application - Starting Application using Java 21.0.1 with PID 6308 (D:\programer\proekt\spring boot projectlar\spring-kun.uz\target\classes started by acer in D:\programer\proekt\spring boot projectlar\spring-kun.uz)
+14 Feb 2024 - 20:00:07.700 INFO  org.example.springkunuz.Application - The following 1 profile is active: "dev"
+14 Feb 2024 - 20:00:08.919 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+14 Feb 2024 - 20:00:09.017 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 89 ms. Found 11 JPA repository interfaces.
+14 Feb 2024 - 20:00:09.675 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+14 Feb 2024 - 20:00:09.685 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+14 Feb 2024 - 20:00:09.686 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.18]
+14 Feb 2024 - 20:00:09.780 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+14 Feb 2024 - 20:00:09.781 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2029 ms
+14 Feb 2024 - 20:00:09.931 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+14 Feb 2024 - 20:00:09.987 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.1.Final
+14 Feb 2024 - 20:00:10.020 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+14 Feb 2024 - 20:00:10.265 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+14 Feb 2024 - 20:00:10.292 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+14 Feb 2024 - 20:00:10.485 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@605eb072
+14 Feb 2024 - 20:00:10.487 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+14 Feb 2024 - 20:00:11.911 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+14 Feb 2024 - 20:00:12.128 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+14 Feb 2024 - 20:00:12.355 INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+14 Feb 2024 - 20:00:13.405 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+14 Feb 2024 - 20:00:13.786 INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7e34570, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@274010fe, org.springframework.security.web.context.SecurityContextHolderFilter@10ac5a14, org.springframework.security.web.header.HeaderWriterFilter@6415112c, org.springframework.security.web.authentication.logout.LogoutFilter@3116e9d2, org.example.springkunuz.config.JwtTokenFilter@53ec379a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@416dd4d8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2dca3c72, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@975f349, org.springframework.security.web.access.ExceptionTranslationFilter@7bec83d5, org.springframework.security.web.access.intercept.AuthorizationFilter@793af433]
+14 Feb 2024 - 20:00:14.287 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+14 Feb 2024 - 20:00:14.298 INFO  org.example.springkunuz.Application - Started Application in 7.091 seconds (process running for 7.851)
+14 Feb 2024 - 20:00:25.108 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+14 Feb 2024 - 20:00:25.109 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+14 Feb 2024 - 20:00:25.110 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+14 Feb 2024 - 20:00:25.235 INFO  o.e.s.controller.AuthController - Login admin@mail.ru1
+14 Feb 2024 - 20:00:25.236 WARN  o.e.s.controller.AuthController - Login admin@mail.ru1
+14 Feb 2024 - 20:00:25.236 ERROR o.e.s.controller.AuthController - Login admin@mail.ru1
+14 Feb 2024 - 20:00:25.242 WARN  o.e.springkunuz.service.AuthService - Email or Password is wrongadmin@mail.ru1
+14 Feb 2024 - 20:16:30.152 WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m19s497ms385µs100ns).
+14 Feb 2024 - 20:21:59.191 WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=59s106ms325µs600ns).
+14 Feb 2024 - 20:59:19.883 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+14 Feb 2024 - 20:59:19.915 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+14 Feb 2024 - 20:59:19.956 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+14 Feb 2024 - 20:59:38.818 INFO  org.example.springkunuz.Application - Starting Application using Java 21.0.1 with PID 13904 (D:\programer\proekt\spring boot projectlar\spring-kun.uz\target\classes started by acer in D:\programer\proekt\spring boot projectlar\spring-kun.uz)
+14 Feb 2024 - 20:59:38.850 INFO  org.example.springkunuz.Application - The following 1 profile is active: "dev"
+14 Feb 2024 - 20:59:40.274 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+14 Feb 2024 - 20:59:40.358 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 75 ms. Found 11 JPA repository interfaces.
+14 Feb 2024 - 20:59:41.074 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+14 Feb 2024 - 20:59:41.086 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+14 Feb 2024 - 20:59:41.086 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.18]
+14 Feb 2024 - 20:59:41.173 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+14 Feb 2024 - 20:59:41.173 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2212 ms
+14 Feb 2024 - 20:59:41.273 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+14 Feb 2024 - 20:59:41.578 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@39f0c343
+14 Feb 2024 - 20:59:41.580 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+14 Feb 2024 - 20:59:41.724 INFO  o.f.c.i.license.VersionPrinter - Flyway Community Edition 9.22.3 by Redgate
+14 Feb 2024 - 20:59:41.728 INFO  o.f.c.i.license.VersionPrinter - See release notes here: https://rd.gt/416ObMi
+14 Feb 2024 - 20:59:41.729 INFO  o.f.c.i.license.VersionPrinter - 
+14 Feb 2024 - 20:59:41.755 INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:postgresql://localhost:5432/kun_uz (PostgreSQL 15.2)
+14 Feb 2024 - 20:59:41.849 INFO  o.f.c.i.s.JdbcTableSchemaHistory - Schema history table "public"."flyway_schema_history" does not exist yet
+14 Feb 2024 - 20:59:41.854 INFO  o.f.core.internal.command.DbValidate - Successfully validated 0 migrations (execution time 00:00.033s)
+14 Feb 2024 - 20:59:41.856 WARN  o.f.core.internal.command.DbValidate - No migrations found. Are your locations set up correctly?
+14 Feb 2024 - 20:59:41.908 INFO  o.f.c.i.s.JdbcTableSchemaHistory - Creating Schema History table "public"."flyway_schema_history" with baseline ...
+14 Feb 2024 - 20:59:42.014 INFO  o.f.core.internal.command.DbBaseline - Successfully baselined schema with version: 1
+14 Feb 2024 - 20:59:42.037 INFO  o.f.core.internal.command.DbMigrate - Current version of schema "public": 1
+14 Feb 2024 - 20:59:42.040 INFO  o.f.core.internal.command.DbMigrate - Schema "public" is up to date. No migration necessary.
+14 Feb 2024 - 20:59:42.173 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+14 Feb 2024 - 20:59:42.251 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.1.Final
+14 Feb 2024 - 20:59:42.302 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+14 Feb 2024 - 20:59:42.613 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+14 Feb 2024 - 20:59:43.990 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+14 Feb 2024 - 20:59:44.203 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+14 Feb 2024 - 20:59:44.422 INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+14 Feb 2024 - 20:59:45.447 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+14 Feb 2024 - 20:59:45.832 INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@35984172, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@746fda68, org.springframework.security.web.context.SecurityContextHolderFilter@33fa6a8b, org.springframework.security.web.header.HeaderWriterFilter@d6de944, org.springframework.security.web.authentication.logout.LogoutFilter@765d2d4d, org.example.springkunuz.config.JwtTokenFilter@14bb16ee, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2d5cb059, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@23591a2c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@77cac3b, org.springframework.security.web.access.ExceptionTranslationFilter@718aa49a, org.springframework.security.web.access.intercept.AuthorizationFilter@46a6b8d6]
+14 Feb 2024 - 20:59:46.300 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+14 Feb 2024 - 20:59:46.309 INFO  org.example.springkunuz.Application - Started Application in 8.147 seconds (process running for 9.116)
+14 Feb 2024 - 21:02:59.180 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+14 Feb 2024 - 21:02:59.182 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+14 Feb 2024 - 21:02:59.190 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+14 Feb 2024 - 21:03:04.506 INFO  org.example.springkunuz.Application - Starting Application using Java 21.0.1 with PID 17292 (D:\programer\proekt\spring boot projectlar\spring-kun.uz\target\classes started by acer in D:\programer\proekt\spring boot projectlar\spring-kun.uz)
+14 Feb 2024 - 21:03:04.522 INFO  org.example.springkunuz.Application - The following 1 profile is active: "dev"
+14 Feb 2024 - 21:03:05.627 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+14 Feb 2024 - 21:03:05.704 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 71 ms. Found 11 JPA repository interfaces.
+14 Feb 2024 - 21:03:06.393 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+14 Feb 2024 - 21:03:06.414 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+14 Feb 2024 - 21:03:06.414 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.18]
+14 Feb 2024 - 21:03:06.487 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+14 Feb 2024 - 21:03:06.487 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1904 ms
+14 Feb 2024 - 21:03:06.600 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+14 Feb 2024 - 21:03:06.823 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5f5297e3
+14 Feb 2024 - 21:03:06.824 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+14 Feb 2024 - 21:03:06.897 INFO  o.f.c.i.license.VersionPrinter - Flyway Community Edition 9.22.3 by Redgate
+14 Feb 2024 - 21:03:06.897 INFO  o.f.c.i.license.VersionPrinter - See release notes here: https://rd.gt/416ObMi
+14 Feb 2024 - 21:03:06.897 INFO  o.f.c.i.license.VersionPrinter - 
+14 Feb 2024 - 21:03:06.909 INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:postgresql://localhost:5432/kun_uz (PostgreSQL 15.2)
+14 Feb 2024 - 21:03:06.958 INFO  o.f.core.internal.command.DbValidate - Successfully validated 1 migration (execution time 00:00.028s)
+14 Feb 2024 - 21:03:06.994 INFO  o.f.core.internal.command.DbMigrate - Current version of schema "public": 1
+14 Feb 2024 - 21:03:06.997 INFO  o.f.core.internal.command.DbMigrate - Schema "public" is up to date. No migration necessary.
+14 Feb 2024 - 21:03:07.142 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+14 Feb 2024 - 21:03:07.195 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.1.Final
+14 Feb 2024 - 21:03:07.229 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+14 Feb 2024 - 21:03:07.490 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+14 Feb 2024 - 21:03:08.989 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+14 Feb 2024 - 21:03:09.190 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+14 Feb 2024 - 21:03:09.432 INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+14 Feb 2024 - 21:03:10.534 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+14 Feb 2024 - 21:03:11.032 INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1ebb6e20, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@85420, org.springframework.security.web.context.SecurityContextHolderFilter@62267a22, org.springframework.security.web.header.HeaderWriterFilter@d58550c, org.springframework.security.web.authentication.logout.LogoutFilter@3087b35f, org.example.springkunuz.config.JwtTokenFilter@5ce593bc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@295d8b70, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2f42f20f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4a81582c, org.springframework.security.web.access.ExceptionTranslationFilter@6b16aa6f, org.springframework.security.web.access.intercept.AuthorizationFilter@20bd4fd2]
+14 Feb 2024 - 21:03:11.618 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+14 Feb 2024 - 21:03:11.632 INFO  org.example.springkunuz.Application - Started Application in 7.62 seconds (process running for 8.41)
+14 Feb 2024 - 21:06:39.855 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+14 Feb 2024 - 21:06:39.858 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+14 Feb 2024 - 21:06:39.862 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+14 Feb 2024 - 21:06:44.636 INFO  org.example.springkunuz.Application - Starting Application using Java 21.0.1 with PID 17072 (D:\programer\proekt\spring boot projectlar\spring-kun.uz\target\classes started by acer in D:\programer\proekt\spring boot projectlar\spring-kun.uz)
+14 Feb 2024 - 21:06:44.651 INFO  org.example.springkunuz.Application - The following 1 profile is active: "dev"
+14 Feb 2024 - 21:06:45.636 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+14 Feb 2024 - 21:06:45.714 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 71 ms. Found 11 JPA repository interfaces.
+14 Feb 2024 - 21:06:46.340 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+14 Feb 2024 - 21:06:46.361 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+14 Feb 2024 - 21:06:46.361 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.18]
+14 Feb 2024 - 21:06:46.430 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+14 Feb 2024 - 21:06:46.430 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1729 ms
+14 Feb 2024 - 21:06:46.515 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+14 Feb 2024 - 21:06:46.730 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@23121d14
+14 Feb 2024 - 21:06:46.731 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+14 Feb 2024 - 21:06:46.798 INFO  o.f.c.i.license.VersionPrinter - Flyway Community Edition 9.22.3 by Redgate
+14 Feb 2024 - 21:06:46.798 INFO  o.f.c.i.license.VersionPrinter - See release notes here: https://rd.gt/416ObMi
+14 Feb 2024 - 21:06:46.798 INFO  o.f.c.i.license.VersionPrinter - 
+14 Feb 2024 - 21:06:46.810 INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:postgresql://localhost:5432/kun_uz (PostgreSQL 15.2)
+14 Feb 2024 - 21:06:46.861 INFO  o.f.core.internal.command.DbValidate - Successfully validated 3 migrations (execution time 00:00.033s)
+14 Feb 2024 - 21:06:46.897 INFO  o.f.core.internal.command.DbMigrate - Current version of schema "public": 1
+14 Feb 2024 - 21:06:46.910 INFO  o.f.core.internal.command.DbMigrate - Migrating schema "public" to version "2 - init admin"
+14 Feb 2024 - 21:06:46.938 INFO  o.f.core.internal.command.DbMigrate - Successfully applied 1 migration to schema "public", now at version v2 (execution time 00:00.013s)
+14 Feb 2024 - 21:06:47.085 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+14 Feb 2024 - 21:06:47.159 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.1.Final
+14 Feb 2024 - 21:06:47.200 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+14 Feb 2024 - 21:06:47.433 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+14 Feb 2024 - 21:06:48.648 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+14 Feb 2024 - 21:06:48.819 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+14 Feb 2024 - 21:06:49.030 INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+14 Feb 2024 - 21:06:49.852 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+14 Feb 2024 - 21:06:50.192 INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2765c3fc, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@52f2d8e8, org.springframework.security.web.context.SecurityContextHolderFilter@35c344ce, org.springframework.security.web.header.HeaderWriterFilter@c9cd06e, org.springframework.security.web.authentication.logout.LogoutFilter@342cc706, org.example.springkunuz.config.JwtTokenFilter@6ccf06f1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@43e587cd, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4a9d0c6f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3e43fb40, org.springframework.security.web.access.ExceptionTranslationFilter@385ff04e, org.springframework.security.web.access.intercept.AuthorizationFilter@27796482]
+14 Feb 2024 - 21:06:50.582 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+14 Feb 2024 - 21:06:50.591 INFO  org.example.springkunuz.Application - Started Application in 6.458 seconds (process running for 7.202)
+14 Feb 2024 - 21:48:29.352 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+14 Feb 2024 - 21:48:29.364 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+14 Feb 2024 - 21:48:29.370 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

@@ -68,10 +68,10 @@ public class CommentService {
         return "deleted comment";
     }
 
-    public List<CommentDTO> getById(JwtDTO jwtDTO, String articleId) {
+    public List<CommentDTO> getById(Integer id, String articleId) {
         List<CommentEntity> allByArticleIdAndProfileId = commentRepository.findAllByArticleIdAndProfileId(articleId, jwtDTO.getId());
         List<CommentDTO>commentDTOList=new ArrayList<>();
-        Optional<ProfileEntity> optionalProfile = profileRepository.findById(jwtDTO.getId());
+        Optional<ProfileEntity> optionalProfile = profileRepository.findById(id);
         ProfileEntity profileEntity = optionalProfile.get();
         for (CommentEntity commentEntity:allByArticleIdAndProfileId){
              CommentDTO commentDTO=new CommentDTO();
@@ -125,7 +125,7 @@ public class CommentService {
         return new PageImpl<>(commentDTOList,pageable,totalSize);
     }
 
-    public CommentDTO getByCommentId(Integer commentId, JwtDTO jwtDTO) {
+    public CommentDTO getByCommentId(Integer commentId) {
         Optional<CommentEntity> byId = commentRepository.findById(commentId);
         if (byId.isEmpty()){
             return null;

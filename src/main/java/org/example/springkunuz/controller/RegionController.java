@@ -24,7 +24,7 @@ import java.util.List;
        private RegionService regionService;
 
        @PostMapping("/adm")
-       public ResponseEntity<RegionDTO> create(@RequestBody RegionDTO regionDTO,HttpServletRequest request) {
+       public ResponseEntity<RegionDTO> create(@RequestBody RegionDTO regionDTO) {
 //           Integer profileId = HttpRequestUtil.getProfileId(request,ProfileRole.ADMIN);
            String crated = regionService.crated(regionDTO);
            CustomUserDetails customUserDetails= SpringSecurityUtil.getCurrentUser();
@@ -33,10 +33,9 @@ import java.util.List;
 
        @PutMapping("/adm/{id}")
        public ResponseEntity<String> edit(@RequestBody RegionDTO regionDTO,
-                                          @PathVariable Integer id,
-                                          HttpServletRequest request) {
+                                          @PathVariable Integer id) {
 
-            JwtDTO jwtDTO=HttpRequestUtil.getJWTDTO(request,ProfileRole.ROLE_ADMIN);
+//            JwtDTO jwtDTO=HttpRequestUtil.getJWTDTO(request,ProfileRole.ROLE_ADMIN);
 //           JwtDTO jwtDTO = JWTUtil.decode(jwt);
 //           if (!jwtDTO.getRole().equals(ProfileRole.ADMIN)) {
 //               return ResponseEntity.status(HttpStatus.FORBIDDEN).build();
@@ -46,8 +45,9 @@ import java.util.List;
        }
 
        @DeleteMapping("/adm/{deletbyId}")
-       public ResponseEntity<String>deleted(@PathVariable Integer deletbyId, HttpServletRequest request){
-           JwtDTO jwtDTO=HttpRequestUtil.getJWTDTO(request,ProfileRole.ROLE_ADMIN);
+       public ResponseEntity<String>deleted(@PathVariable Integer deletbyId){
+//           JwtDTO jwtDTO=HttpRequestUtil.getJWTDTO(request,ProfileRole.ROLE_ADMIN);
+
 //          ProfileRole role=(ProfileRole) request.getAttribute("role");
 //          if (!role.equals(ProfileRole.ADMIN)){
 //              return ResponseEntity.status(HttpStatus.FORBIDDEN).build();
@@ -60,7 +60,7 @@ import java.util.List;
 //           if (!jwtDTO.getRole().equals(ProfileRole.ADMIN)) {
 //               return ResponseEntity.status(HttpStatus.FORBIDDEN).build();
 //           }
-           JwtDTO jwtDTO=HttpRequestUtil.getJWTDTO(request,ProfileRole.ROLE_ADMIN);
+//           JwtDTO jwtDTO=HttpRequestUtil.getJWTDTO(request,ProfileRole.ROLE_ADMIN);
            return ResponseEntity.ok(regionService.getAll());
        }
        @GetMapping("/getLang")

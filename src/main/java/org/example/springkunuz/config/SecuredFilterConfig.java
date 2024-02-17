@@ -1,3 +1,4 @@
+/*
 package org.example.springkunuz.config;
 
 import jakarta.servlet.Filter;
@@ -44,3 +45,4 @@ public class SecuredFilterConfig {
     }
 
 }
+*/

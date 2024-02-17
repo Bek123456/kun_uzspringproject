@@ -14,21 +14,17 @@ import org.springframework.web.multipart.MultipartFile;
 public class AttachController {
     @Autowired
     private AttachService attachService;
-
 //    @PostMapping("/upload")
 //    public ResponseEntity<String> upload(@RequestParam("file") MultipartFile file) {
 //        String fileName = attachService.saveToSystem(file);
 //        return ResponseEntity.ok().body(fileName);
 //    }
-
-
 //    @PostMapping("/upload")
 //
 //     public ResponseEntity<AttachDTO> upload(@RequestParam("file") MultipartFile file) {
 //       AttachDTO dto = attachService.save(file);
 //       return ResponseEntity.ok().body(dto);
 //    }
-
     @PostMapping("/upload")
     public ResponseEntity<AttachDTO>upload(@RequestParam("file")MultipartFile file){
         AttachDTO save = attachService.save(file);
@@ -53,11 +49,8 @@ public class AttachController {
         return attachService.open_general(fileName);
     }
 
-
 //    @GetMapping("/download/{fineName}")
 //    public ResponseEntity<Resource> download(@PathVariable("fineName") String fileName) {
 //        return attachService.download(fileName);
 //    }
-
-
 }

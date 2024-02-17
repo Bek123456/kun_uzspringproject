@@ -31,6 +31,7 @@ public class JwtTokenFilter extends OncePerRequestFilter {
                 .stream(SpringSecurityConfig.AUTH_WHITELIST)
                 .anyMatch(p -> pathMatcher.match(p, request.getServletPath()));
     }
+
     @Override
     protected void doFilterInternal(HttpServletRequest request,
                                     HttpServletResponse response,

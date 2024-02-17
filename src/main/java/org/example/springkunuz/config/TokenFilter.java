@@ -1,3 +1,4 @@
+/*
 package org.example.springkunuz.config;
 
 import io.jsonwebtoken.JwtException;
@@ -41,3 +42,4 @@ public class TokenFilter extends GenericFilterBean{
     }
 
 }
+*/

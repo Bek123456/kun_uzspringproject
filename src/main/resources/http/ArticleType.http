@@ -32,3 +32,15 @@ Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MDY0NTM4NjQsImlkIjoxLCJyb
 ###
 GET http://localhost:8080/articletype/adm/byLang?lang=uz
 Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MDY0NTM4NjQsImlkIjoxLCJyb2xlIjoiQURNSU4iLCJleHAiOjE3MDY1NDAyNjQsImlzcyI6Ikt1blV6VGVzdCJ9.fMFSL5-u1e89CbP7Oc_Du4dwkHNNbHBnNbSbZePvbLi_b3Xz9nuJKf-9572MJ6Wmgfo6L9B3fDsXcgbGlEza5w
+####
+POST http://localhost:8080/articletype/adm
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MDgwMDYzMTMsImVtYWlsIjoiYWRtaW5AbWFpbC5ydSIsInJvbGUiOiJST0xFX0FETUlOIiwiZXhwIjoxNzA4MDkyNzEzLCJpc3MiOiJLdW5VelRlc3QifQ.6GSN4_ecHyLZ07CyPo7bV0EFhVcUHHY0JvL3lbFAiUsOVM7j44Y_GgW1htGaTDtqqOt8vlNATtv-NSSDtruz5g
+
+
+{
+  "orderNumber": "1",
+  "nameUz": "UUUU",
+  "nameRus": "RRRR",
+  "nameEng": "EEEE"
+}

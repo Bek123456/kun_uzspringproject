@@ -21,16 +21,17 @@ public class CommentLikeService {
        private CommentLikeRepository commentLikeRepository;
        @Autowired
        private CommentRepository commentRepository;
-       public String created(Integer commentId, JwtDTO jwtDTO, LikeStatus status) {
+       public String created(Integer commentId, Integer id, LikeStatus status) {
            Optional<CommentEntity> byId = commentRepository.findById(commentId);
            if (byId.isEmpty()){
                return "not found comment";
            }
+
            if (status.equals(LikeStatus.BUMIDI)){
               CommentLikeEntity commentLikeEntity=new CommentLikeEntity();
               commentLikeEntity.setCommentId(commentId);
               commentLikeEntity.setStatus(status);
-              commentLikeEntity.setProfileId(jwtDTO.getId());
+              commentLikeEntity.setProfileId(id);
               commentLikeEntity.setCreatedDate(LocalDateTime.now());
               commentLikeRepository.save(commentLikeEntity);
               return "created Dislike";
@@ -39,7 +40,7 @@ public class CommentLikeService {
                CommentLikeEntity commentLikeEntity=new CommentLikeEntity();
                commentLikeEntity.setCommentId(commentId);
                commentLikeEntity.setStatus(status);
-               commentLikeEntity.setProfileId(jwtDTO.getId());
+               commentLikeEntity.setProfileId(id);
                commentLikeEntity.setCreatedDate(LocalDateTime.now());
                commentLikeRepository.save(commentLikeEntity);
                return "created like";

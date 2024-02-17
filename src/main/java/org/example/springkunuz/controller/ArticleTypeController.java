@@ -20,21 +20,19 @@ public class ArticleTypeController {
     @Autowired
     private ArticleTypeService articleTypeService;
     @PostMapping("/adm")
-    public ResponseEntity<String>create(@RequestBody ArticleTypeDTO articleTypeDTO,
-                                        HttpServletRequest request){
-      JwtDTO jwtDTO= HttpRequestUtil.getJWTDTO(request,ProfileRole.ROLE_ADMIN);
+    public ResponseEntity<String>create(@RequestBody ArticleTypeDTO articleTypeDTO){
+//
         return ResponseEntity.ok(articleTypeService.create(articleTypeDTO));
     }
     @PutMapping("/adm/articleTypeedit/{id}")
     public ResponseEntity<String>edit1(@PathVariable Integer id,
-                                       @RequestBody ArticleTypeDTO articleTypeDTO,
-                                       HttpServletRequest request){
-//        JwtDTO jwtDTO= JWTUtil.decode(jwt);
+                                       @RequestBody ArticleTypeDTO articleTypeDTO){
+        //        JwtDTO jwtDTO= JWTUtil.decode(jwt);
 //        if (!jwtDTO.getRole().equals(ProfileRole.ADMIN)){
 //            return ResponseEntity.status(HttpStatus.FORBIDDEN).build();
 //        }
-
-        JwtDTO jwtDTO= HttpRequestUtil.getJWTDTO(request,ProfileRole.ROLE_ADMIN);
+//
+//        JwtDTO jwtDTO= HttpRequestUtil.getJWTDTO(request,ProfileRole.ROLE_ADMIN);
         return ResponseEntity.ok(articleTypeService.edit1(id,articleTypeDTO));
     }
     @DeleteMapping("/adm/articletypedelet/{id}")
@@ -51,11 +49,9 @@ public class ArticleTypeController {
         JwtDTO jwtDTO= HttpRequestUtil.getJWTDTO(request,ProfileRole.ROLE_ADMIN);
         return ResponseEntity.ok(articleTypeService.getPage(page,size));
     }
-    @GetMapping("/adm/byLang")
+    @GetMapping("/byLang")
     public ResponseEntity<List<ArticleTypeDTO>>getByLang(@RequestParam(value = "lang", defaultValue = "uz")
-                                                             AppLanguage language,
-                                                            HttpServletRequest request){
-          JwtDTO jwtDTO=HttpRequestUtil.getJWTDTO(request,ProfileRole.ROLE_ADMIN);
+                                                             AppLanguage language){
          return ResponseEntity.ok(articleTypeService.getByLang(language));
     }
 

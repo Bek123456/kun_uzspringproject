@@ -1,5 +1,7 @@
 package org.example.springkunuz.config;
 
+import lombok.Getter;
+import lombok.Setter;
 import org.example.springkunuz.enums.ProfileRole;
 import org.example.springkunuz.enums.ProfileStatus;
 import org.springframework.security.core.GrantedAuthority;
@@ -11,7 +13,8 @@ import java.util.Collection;
 import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
-
+@Getter
+@Setter
 public class CustomUserDetails implements UserDetails {
     private Integer id;
     private String email;

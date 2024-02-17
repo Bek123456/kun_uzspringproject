@@ -37,10 +37,26 @@ Content-Type: application/json
 ###
 POST http://localhost:8080/api/auth/login
 Content-Type: application/json
+Accept-Language: ru
 
 {
   "email": "admin@mail.ru",
   "password": "12345"
+}
+
+#####
+
+POST http://localhost:8080/region/adm
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MDgwMDYzMTMsImVtYWlsIjoiYWRtaW5AbWFpbC5ydSIsInJvbGUiOiJST0xFX0FETUlOIiwiZXhwIjoxNzA4MDkyNzEzLCJpc3MiOiJLdW5VelRlc3QifQ.6GSN4_ecHyLZ07CyPo7bV0EFhVcUHHY0JvL3lbFAiUsOVM7j44Y_GgW1htGaTDtqqOt8vlNATtv-NSSDtruz5g
+
+{
+
+  "orderNumber": 2,
+  "nameUz": "salom",
+  "nameRu": "hello",
+  "nameEn": "prvet"
+
 }
 
 

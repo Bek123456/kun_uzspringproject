@@ -9,6 +9,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.example.springkunuz.dto.AuthDTO;
 import org.example.springkunuz.dto.ProfileDTO;
 import org.example.springkunuz.dto.RegistrationDTO;
+import org.example.springkunuz.enums.AppLanguage;
 import org.example.springkunuz.service.AuthService;
 import org.example.springkunuz.service.MailSenderService;
 import org.slf4j.Logger;
@@ -27,13 +28,14 @@ public class AuthController {
     //private Logger log= LoggerFactory.getLogger(AuthController.class);
     @PostMapping("/login")
     @Operation( summary = "Api for login", description = "this api used for authorization")
-    public ResponseEntity<ProfileDTO>login(HttpServletRequest request, @RequestBody  AuthDTO auth){
+    public ResponseEntity<ProfileDTO>login(@RequestHeader(value = "Accept-Language",defaultValue = "uz") AppLanguage language,
+                                           @RequestBody  AuthDTO auth){
         log.trace("Login In Trace");
         log.debug("Login In Debug");
         log.info("Login {}",auth.getEmail());
         log.warn("Login {}",auth.getEmail());
         log.error("Login {}",auth.getEmail());
-        ProfileDTO autht = authService.auth(auth);
+        ProfileDTO autht = authService.auth(auth,language);
         return ResponseEntity.ok(autht);
     }
     @PostMapping("/registration")

@@ -30,10 +30,17 @@ public class SpringSecurityConfig {
     private JwtTokenFilter jwtTokenFilter;
 
     public static final String[]AUTH_WHITELIST={
-            "/auth/*",
+            "/api/auth/*",
             "/init/admin",
             "/init/*",
+            "/profile/filter",
             "/region/byLang",
+            "/articletype/byLang",
+            "/category/byLang",
+            "/commentlike/*",
+            "/articlelike/*",
+            "/comment/*",
+            "/attach/*",
             "/v2/api-docs",
             "/configuration/ui",
             "/configuration/security",
@@ -47,7 +54,6 @@ public class SpringSecurityConfig {
     @Bean
     public AuthenticationProvider authenticationProvider() {
         // authentication
-
 //
 //        String password = UUID.randomUUID().toString();
 //        System.out.println("User Pasword mazgi: " + password);
@@ -57,6 +63,7 @@ public class SpringSecurityConfig {
 //                .password("{noop}" + password)
 //                .roles("ADMIN")
 //                .build();
+
         final DaoAuthenticationProvider authenticationProvider = new DaoAuthenticationProvider();
         authenticationProvider.setUserDetailsService(userDetailsService);
         authenticationProvider.setPasswordEncoder(passwordEncoder());
@@ -64,12 +71,15 @@ public class SpringSecurityConfig {
 
     }
 
+
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http.authorizeHttpRequests(authorizationManagerRequestMatcherRegistry -> {
             authorizationManagerRequestMatcherRegistry
                     .requestMatchers(AUTH_WHITELIST).permitAll()
-                    .requestMatchers("region/adm/*").hasRole("ADMIN")
+                    .requestMatchers("/region/adm/*").hasRole("ADMIN")
+                    .requestMatchers("/articletype/adm/*").hasRole("ADMIN")
+                    .requestMatchers("/category/adm/*").hasRole("ADMIN")
                     .requestMatchers("/article/publish").hasAnyRole("ADMIN","PUBLISHER")
                     .requestMatchers("/profile","/profile/*").hasRole("ADMIN")
                     .anyRequest()

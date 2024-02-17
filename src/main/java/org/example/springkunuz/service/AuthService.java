@@ -7,6 +7,7 @@ import org.example.springkunuz.dto.JwtDTO;
 import org.example.springkunuz.dto.ProfileDTO;
 import org.example.springkunuz.dto.RegistrationDTO;
 import org.example.springkunuz.entity.ProfileEntity;
+import org.example.springkunuz.enums.AppLanguage;
 import org.example.springkunuz.enums.ProfileRole;
 import org.example.springkunuz.enums.ProfileStatus;
 import org.example.springkunuz.exp.AppBadException;
@@ -37,14 +38,17 @@ public class AuthService {
      private SmsServerService smsServerService;
      @Autowired
      private ResourceBundleMessageSource resourceBundleMessageSource;
-     public ProfileDTO auth(AuthDTO profile){
+     @Autowired
+     private ResourceBundleService resourceBundleService;
+     public ProfileDTO auth(AuthDTO profile, AppLanguage language){
           Optional<ProfileEntity> optional = profileRepository.findByEmailAndPassword(profile.getEmail(),
                   MDUtil.encode(profile.getPassword()));
 
           if (optional.isEmpty()) {
-               resourceBundleMessageSource.getMessage("email.password.wrong",null,new Locale("en"));
+              //   String message = resourceBundleMessageSource.getMessage("email.password.wrong", null, new Locale(language.name()));
+
                log.warn("Email or Password is wrong{}",profile.getEmail());
-               throw new AppBadException("Email or Password is wrong");
+               throw new AppBadException(resourceBundleService.getMessage("email.password.wrong",language));
           }
 
           ProfileEntity entity = optional.get();
@@ -57,9 +61,6 @@ public class AuthService {
           dto.setSurname(entity.getSurname());
           dto.setRole(entity.getRole());
           dto.setJwt(JWTUtil.encode(entity.getEmail()
-
-
-
 
                   ,entity.getRole()));
           return dto;
